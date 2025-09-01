@@ -56,33 +56,44 @@ cv:
         highlights:
     projects:
       - name: AI-Powered News Summarization Platform
-        date:
-        start_date: 2025-09
+        date: 2025-09
+        start_date: 
         end_date:
         location:
         summary:
         highlights:
+          - "Built a full-stack web application that automatically summarizes and curates news articles using LLM-based NLP pipelines."
+          - "Designed lazy-loading article feed with React, improving load performance and user experience for continuous scrolling."
+          - "Integrated SQL-backed storage system to manage articles and metadata, enabling efficient retrieval and filtering."
+          - "Delivered production-ready features like refresh functionality, dark mode toggle, and scalable backend APIs, demonstrating end-to-end software development skills."
       - name: Optimization via Gradient Descent
-        date:
-        start_date: 2024-11
+        date: 2024-11
+        start_date: 
         end_date:
         location:
         summary:
         highlights:
+          - Implemented a scalable gradient descent algorithm to minimize cost functions, achieving optimized solutions for regression models and facility location problems
+          - Reduced computation time by applying vectorized operations in NumPy, demonstrating efficiency improvements in optimization workflows.
       - name: Dynamic System Simulation (Wilberforce Pendulum)
-        date:
-        start_date: 2025-02
+        date: 2025-02
+        start_date: 
         end_date:
         location:
         summary:
         highlights:
+          - Built a computational physics simulation solving nonlinear differential equations to model pendulum motion.
+          - Designed data visualization pipeline with Matplotlib, producing clear, interpretable insights on oscillatory and rotational dynamics.
+          - Showcased ability to apply numerical methods and mathematical modeling to real-world physics problems.
       - name: "Research Project: Biomechanical Landing Optimization"
-        date:
-        start_date: 2023-09
+        date: 2023-09
+        start_date: 
         end_date:
         location:
         summary:
         highlights:
+          - Conducted research analyzing how variations in human landing techniques affect stress on musculoskeletal systems.
+          - Applied statistical and computational methods to interpret results; authored a research paper synthesizing findings with potential applications in sports science and injury prevention.
     skills:
       - label: Languages
         details: Python, JavaScript, TypeScript, Java, C++

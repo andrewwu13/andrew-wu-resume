@@ -565,12 +565,12 @@
     #strong[AI-Powered News Summarization Platform] 
   ],
   right-content: [
-    Sept 2025 – present
+    Sept 2025
   ],
 )
 #one-col-entry(
   content: [
-    
+    #v(design-highlights-top-margin);#highlights([Built a full-stack web application that automatically summarizes and curates news articles using LLM-based NLP pipelines.],[Designed lazy-loading article feed with React, improving load performance and user experience for continuous scrolling.],[Integrated SQL-backed storage system to manage articles and metadata, enabling efficient retrieval and filtering.],[Delivered production-ready features like refresh functionality, dark mode toggle, and scalable backend APIs, demonstrating end-to-end software development skills.],)
   ],
 )
 
@@ -580,12 +580,12 @@
     #strong[Optimization via Gradient Descent] 
   ],
   right-content: [
-    Nov 2024 – present
+    Nov 2024
   ],
 )
 #one-col-entry(
   content: [
-    
+    #v(design-highlights-top-margin);#highlights([Implemented a scalable gradient descent algorithm to minimize cost functions, achieving optimized solutions for regression models and facility location problems],[Reduced computation time by applying vectorized operations in NumPy, demonstrating efficiency improvements in optimization workflows.],)
   ],
 )
 
@@ -595,12 +595,12 @@
     #strong[Dynamic System Simulation \(Wilberforce Pendulum\)] 
   ],
   right-content: [
-    Feb 2025 – present
+    Feb 2025
   ],
 )
 #one-col-entry(
   content: [
-    
+    #v(design-highlights-top-margin);#highlights([Built a computational physics simulation solving nonlinear differential equations to model pendulum motion.],[Designed data visualization pipeline with Matplotlib, producing clear, interpretable insights on oscillatory and rotational dynamics.],[Showcased ability to apply numerical methods and mathematical modeling to real-world physics problems.],)
   ],
 )
 
@@ -610,12 +610,12 @@
     #strong[Research Project: Biomechanical Landing Optimization] 
   ],
   right-content: [
-    Sept 2023 – present
+    Sept 2023
   ],
 )
 #one-col-entry(
   content: [
-    
+    #v(design-highlights-top-margin);#highlights([Conducted research analyzing how variations in human landing techniques affect stress on musculoskeletal systems.],[Applied statistical and computational methods to interpret results; authored a research paper synthesizing findings with potential applications in sports science and injury prevention.],)
   ],
 )
 
