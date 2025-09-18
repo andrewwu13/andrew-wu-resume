@@ -2,10 +2,9 @@
 
 - Phone: +1 647 451 7652
 - Email: [andrewwuca@gmail.com](mailto:andrewwuca@gmail.com)
-- Location: Richmond Hill, Ontario
-- Website: [github.comandrewwu13](https://github.com/andrewwu13)
-- LinkedIn: [andrew-wu-3a7842241](https://linkedin.com/in/andrew-wu-3a7842241)
+- Location: Hamilton, Ontario
 - GitHub: [andrewwu13](https://github.com/andrewwu13)
+- LinkedIn: [andrew-wu13](https://linkedin.com/in/andrew-wu13)
 
 
 # Education
@@ -18,30 +17,21 @@
 ## St. Robert Catholic High School, IB Diploma
 
 - Sept 2021 – June 2025
+- GPA: 4.0 (97%)
 
-# Experience
+# Skills
 
-## Student Athletic Council, St. Robert CHS, Media Executive
-
-- Sept 2021 – June 2025
-
-## Muskoka Woods Summer Camp, Camp Counsellor
-
-- Sept 2023 – Sept 2023
-
-## Kumon Institute Education, Center Assistant
-
-- Aug 2021 – May 2022
-
+- Languages: Python, JavaScript, TypeScript, Java, C++
+- Technologies/Frameworks: React, HTML/CSS, Git, MySQL, PostgreSQL, Node.js, Express
+- Libraries: Pandas, NumPy, Matplotlib, scikit-learn
 # Projects
 
 ## AI-Powered News Summarization Platform
 
 - Sept 2025
 - Built a full-stack web application that automatically summarizes and curates news articles using LLM-based NLP pipelines.
-- Designed lazy-loading article feed with React, improving load performance and user experience for continuous scrolling.
+- Improved UI/UX and shipped production-ready features with React (lazy-loading feed, refresh functionality, scalable backend APIs)
 - Integrated SQL-backed storage system to manage articles and metadata, enabling efficient retrieval and filtering.
-- Delivered production-ready features like refresh functionality, dark mode toggle, and scalable backend APIs, demonstrating end-to-end software development skills.
 
 ## Optimization via Gradient Descent
 
@@ -54,7 +44,6 @@
 - Feb 2025
 - Built a computational physics simulation solving nonlinear differential equations to model pendulum motion.
 - Designed data visualization pipeline with Matplotlib, producing clear, interpretable insights on oscillatory and rotational dynamics.
-- Showcased ability to apply numerical methods and mathematical modeling to real-world physics problems.
 
 ## Research Project: Biomechanical Landing Optimization
 
@@ -62,14 +51,26 @@
 - Conducted research analyzing how variations in human landing techniques affect stress on musculoskeletal systems.
 - Applied statistical and computational methods to interpret results; authored a research paper synthesizing findings with potential applications in sports science and injury prevention.
 
-# Skills
+# Experience
 
-- Languages: Python, JavaScript, TypeScript, Java, C++
-- Technologies/Frameworks: React, HTML/CSS, Git, MySQL, PostgreSQL, Node.js, Express
-- Libraries: Pandas, NumPy, Matplotlib, scikit-learn
+## Student Athletic Council, St. Robert CHS, Media Executive
+
+- Sept 2021 – June 2025
+- Produced and managed digital media strategy for school athletics, generating 200,000+ engagements in one year through sports highlight reels and social campaigns.
+- Collaborated with cross-functional teams to build community engagement, demonstrating leadership and project management skills.
+
+## Muskoka Woods Summer Camp, Camp Counsellor
+
+- Sept 2023 – Sept 2023
+- Led 20+ high school campers in daily activities, ensuring safety, teamwork, and problem-solving in high-pressure environments
+
+## Kumon Institute Education, Center Assistant
+
+- Aug 2021 – May 2022
+- Tutored math/reading, strengthening communication and clarity in teaching
+
 # Certifications and Achievements
 
 - Canadian Youth Physicist's Tournament Gold Medal | IYPT
 - Certified B1 French Speaker | Diplôme D'études En Langue Française
-- Certificate of Distinction | CEMC Pascal, Euclid, CSMC
-- 4x Honour Roll | IB Diploma Graduate
+- Sports Medicine ILC Qualifier | HOSA SLC

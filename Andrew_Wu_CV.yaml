@@ -1,14 +1,14 @@
 cv:
   name: Andrew Wu
-  location: Richmond Hill, Ontario
+  location: Hamilton, Ontario
   email: andrewwuca@gmail.com
   phone: +1-647-451-7652
-  website: https://github.com/andrewwu13
+  website: 
   social_networks:
-    - network: LinkedIn
-      username: andrew-wu-3a7842241
     - network: GitHub
       username: andrewwu13
+    - network: LinkedIn
+      username: andrew-wu13
   sections:
     education:
       - institution: McMaster University
@@ -27,33 +27,16 @@ cv:
         start_date: 2021-09
         end_date: 2025-06
         location: 
-        summary: "GPA: 4.0 (97%)"
+        summary: 
         highlights:
-    experience:
-      - company: Student Athletic Council, St. Robert CHS
-        position: Media Executive
-        date:
-        start_date: 2021-09
-        end_date: 2025-06
-        location: 
-        summary:
-        highlights:
-      - company: Muskoka Woods Summer Camp
-        position: Camp Counsellor
-        date:
-        start_date: 2023-09
-        end_date: 2023-09
-        location:
-        summary:
-        highlights:
-      - company: Kumon Institute Education
-        position: Center Assistant
-        date:
-        start_date: 2021-08
-        end_date: 2022-05
-        location:
-        summary:
-        highlights:
+           - "GPA: 4.0 (97%)"
+    skills:
+      - label: Languages
+        details: Python, JavaScript, TypeScript, Java, C++
+      - label: Technologies/Frameworks
+        details: React, HTML/CSS, Git, MySQL, PostgreSQL, Node.js, Express
+      - label: Libraries
+        details: Pandas, NumPy, Matplotlib, scikit-learn
     projects:
       - name: AI-Powered News Summarization Platform
         date: 2025-09
@@ -63,9 +46,8 @@ cv:
         summary:
         highlights:
           - "Built a full-stack web application that automatically summarizes and curates news articles using LLM-based NLP pipelines."
-          - "Designed lazy-loading article feed with React, improving load performance and user experience for continuous scrolling."
+          - "Improved UI/UX and shipped production-ready features with React (lazy-loading feed, refresh functionality, scalable backend APIs)"
           - "Integrated SQL-backed storage system to manage articles and metadata, enabling efficient retrieval and filtering."
-          - "Delivered production-ready features like refresh functionality, dark mode toggle, and scalable backend APIs, demonstrating end-to-end software development skills."
       - name: Optimization via Gradient Descent
         date: 2024-11
         start_date: 
@@ -84,7 +66,6 @@ cv:
         highlights:
           - Built a computational physics simulation solving nonlinear differential equations to model pendulum motion.
           - Designed data visualization pipeline with Matplotlib, producing clear, interpretable insights on oscillatory and rotational dynamics.
-          - Showcased ability to apply numerical methods and mathematical modeling to real-world physics problems.
       - name: "Research Project: Biomechanical Landing Optimization"
         date: 2023-09
         start_date: 
@@ -94,26 +75,47 @@ cv:
         highlights:
           - Conducted research analyzing how variations in human landing techniques affect stress on musculoskeletal systems.
           - Applied statistical and computational methods to interpret results; authored a research paper synthesizing findings with potential applications in sports science and injury prevention.
-    skills:
-      - label: Languages
-        details: Python, JavaScript, TypeScript, Java, C++
-      - label: Technologies/Frameworks
-        details: React, HTML/CSS, Git, MySQL, PostgreSQL, Node.js, Express
-      - label: Libraries
-        details: Pandas, NumPy, Matplotlib, scikit-learn
+    experience:
+      - company: Student Athletic Council, St. Robert CHS
+        position: Media Executive
+        date:
+        start_date: 2021-09
+        end_date: 2025-06
+        location: 
+        summary:
+        highlights:
+          - Produced and managed digital media strategy for school athletics, generating 200,000+ engagements in one year through sports highlight reels and social campaigns.
+          - Collaborated with cross-functional teams to build community engagement, demonstrating leadership and project management skills.
+      - company: Muskoka Woods Summer Camp
+        position: Camp Counsellor
+        date:
+        start_date: 2023-09
+        end_date: 2023-09
+        location:
+        summary:
+        highlights:
+           - Led 20+ high school campers in daily activities, ensuring safety, teamwork, and problem-solving in high-pressure environments
+      - company: Kumon Institute Education
+        position: Center Assistant
+        date:
+        start_date: 2021-08
+        end_date: 2022-05
+        location:
+        summary:
+        highlights:
+           - Tutored math/reading, strengthening communication and clarity in teaching
     certifications_and_achievements:
       - bullet: "Canadian Youth Physicist's Tournament Gold Medal | IYPT"
       - bullet: "Certified B1 French Speaker | Diplôme D'études En Langue Française"
-      - bullet: "Certificate of Distinction | CEMC Pascal, Euclid, CSMC"
-      - bullet: "4x Honour Roll | IB Diploma Graduate"
+      - bullet: "Sports Medicine ILC Qualifier | HOSA SLC"
 design:
   theme: engineeringresumes
   page:
     size: us-letter
-    top_margin: 2cm
-    bottom_margin: 2cm
-    left_margin: 2cm
-    right_margin: 2cm
+    top_margin: 1.5cm
+    bottom_margin: 1.5cm
+    left_margin: 1.5cm
+    right_margin: 1.5cm
     show_page_numbering: false
     show_last_updated_date: true
   colors:
@@ -142,7 +144,7 @@ design:
     horizontal_space_between_connections: 0.5cm
     connections_font_family: XCharter
     separator_between_connections: '|'
-    use_icons_for_connections: false
+    use_icons_for_connections: true
     alignment: center
   section_titles:
     type: with-parial-line
@@ -151,14 +153,14 @@ design:
     bold: true
     small_caps: false
     line_thickness: 0.5pt
-    vertical_space_above: 0.55cm
+    vertical_space_above: 0.4cm
     vertical_space_below: 0.3cm
     line_type: with-full-line
   entries:
     date_and_location_width: 4.15cm
     left_and_right_margin: 0cm
     horizontal_space_between_columns: 0.1cm
-    vertical_space_between_entries: 0.4cm
+    vertical_space_between_entries: 0.3cm
     allow_page_break_in_sections: true
     allow_page_break_in_entries: true
     short_second_row: false
@@ -209,7 +211,7 @@ locale:
   language: en
   phone_number_format: national
   page_numbering_template: NAME - Page PAGE_NUMBER of TOTAL_PAGES
-  last_updated_date_template: Last updated in TODAY
+  last_updated_date_template: ""
   date_template: MONTH_ABBREVIATION YEAR
   month: month
   months: months

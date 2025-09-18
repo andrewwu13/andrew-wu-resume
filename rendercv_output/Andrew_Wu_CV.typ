@@ -3,7 +3,7 @@
 
 #let name = "Andrew Wu"
 #let locale-catalog-page-numbering-style = context { "Andrew Wu - Page " + str(here().page()) + " of " + str(counter(page).final().first()) + "" }
-#let locale-catalog-last-updated-date-style = "Last updated in Aug 2025"
+#let locale-catalog-last-updated-date-style = ""
 #let locale-catalog-language = "en"
 #let design-page-size = "us-letter"
 #let design-section-titles-font-size = 1.2em
@@ -18,7 +18,7 @@
 #let design-section-titles-line-thickness = 0.5pt
 #let design-section-titles-font-size = 1.2em
 #let design-section-titles-type = "with-parial-line"
-#let design-section-titles-vertical-space-above = 0.55cm
+#let design-section-titles-vertical-space-above = 0.4cm
 #let design-section-titles-vertical-space-below = 0.3cm
 #let design-section-titles-small-caps = false
 #let design-links-use-external-link-icon = false
@@ -28,14 +28,14 @@
 #let design-text-alignment = "justified"
 #let design-text-date-and-location-column-alignment = right
 #let design-header-photo-width = 3.5cm
-#let design-header-use-icons-for-connections = false
+#let design-header-use-icons-for-connections = true
 #let design-header-name-font-family = "XCharter"
 #let design-header-name-font-size = 25pt
 #let design-header-name-bold = false
 #let design-header-connections-font-family = "XCharter"
 #let design-header-vertical-space-between-name-and-connections = 0.7cm
 #let design-header-vertical-space-between-connections-and-first-section = 0.7cm
-#let design-header-use-icons-for-connections = false
+#let design-header-use-icons-for-connections = true
 #let design-header-horizontal-space-between-connections = 0.5cm
 #let design-header-separator-between-connections = "|"
 #let design-header-alignment = center
@@ -45,15 +45,15 @@
 #let design-highlights-left-margin = 0cm
 #let design-highlights-vertical-space-between-highlights = 0.19cm
 #let design-highlights-horizontal-space-between-bullet-and-highlights = 0.3em
-#let design-entries-vertical-space-between-entries = 0.4cm
+#let design-entries-vertical-space-between-entries = 0.3cm
 #let design-entries-date-and-location-width = 4.15cm
 #let design-entries-allow-page-break-in-entries = true
 #let design-entries-horizontal-space-between-columns = 0.1cm
 #let design-entries-left-and-right-margin = 0cm
-#let design-page-top-margin = 2cm
-#let design-page-bottom-margin = 2cm
-#let design-page-left-margin = 2cm
-#let design-page-right-margin = 2cm
+#let design-page-top-margin = 1.5cm
+#let design-page-bottom-margin = 1.5cm
+#let design-page-left-margin = 1.5cm
+#let design-page-right-margin = 1.5cm
 #let design-page-show-last-updated-date = true
 #let design-page-show-page-numbering = false
 #let design-links-underline = true
@@ -451,12 +451,11 @@
 
 // Print connections:
 #let connections-list = (
-  [Richmond Hill, Ontario],
-  [#box(original-link("mailto:andrewwuca@gmail.com")[andrewwuca\@gmail.com])],
-  [#box(original-link("tel:+1-647-451-7652")[\(647\) 451-7652])],
-  [#box(original-link("https://github.com/andrewwu13")[github.com\/andrewwu13])],
-  [#box(original-link("https://linkedin.com/in/andrew-wu-3a7842241")[linkedin.com\/in\/andrew-wu-3a7842241])],
-  [#box(original-link("https://github.com/andrewwu13")[github.com\/andrewwu13])],
+  [#fa-icon("location-dot", size: 0.9em) #h(0.05cm)Hamilton, Ontario],
+  [#box(original-link("mailto:andrewwuca@gmail.com")[#fa-icon("envelope", size: 0.9em) #h(0.05cm)andrewwuca\@gmail.com])],
+  [#box(original-link("tel:+1-647-451-7652")[#fa-icon("phone", size: 0.9em) #h(0.05cm)\(647\) 451-7652])],
+  [#box(original-link("https://github.com/andrewwu13")[#fa-icon("github", size: 0.9em) #h(0.05cm)andrewwu13])],
+  [#box(original-link("https://linkedin.com/in/andrew-wu13")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)andrew-wu13])],
 )
 #connections(connections-list)
 
@@ -498,7 +497,7 @@
 #block(
   [
     #set par(spacing: 0pt)
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [GPA: 4.0 \(97\%\)])], column-gutter: 0cm)
+    #v(design-highlights-top-margin);#highlights([GPA: 4.0 \(97\%\)],)
   ],
   inset: (
     left: design-entries-left-and-right-margin,
@@ -508,53 +507,20 @@
 
 
 
-== Experience
+== Skills
 
 
-#two-col-entry(
-  left-content: [
-    #strong[Media Executive], Student Athletic Council, St. Robert CHS 
-  ],
-  right-content: [
-    Sept 2021 – June 2025
-  ],
-)
 #one-col-entry(
-  content: [
-    
-  ],
+  content: [#strong[Languages:] Python, JavaScript, TypeScript, Java, C]
 )
-
 #v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Camp Counsellor], Muskoka Woods Summer Camp 
-  ],
-  right-content: [
-    Sept 2023 – Sept 2023
-  ],
-)
 #one-col-entry(
-  content: [
-    
-  ],
+  content: [#strong[Technologies\/Frameworks:] React, HTML\/CSS, Git, MySQL, PostgreSQL, Node.js, Express]
 )
-
 #v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Center Assistant], Kumon Institute Education 
-  ],
-  right-content: [
-    Aug 2021 – May 2022
-  ],
-)
 #one-col-entry(
-  content: [
-    
-  ],
+  content: [#strong[Libraries:] Pandas, NumPy, Matplotlib, scikit-learn]
 )
-
 
 
 == Projects
@@ -570,7 +536,7 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Built a full-stack web application that automatically summarizes and curates news articles using LLM-based NLP pipelines.],[Designed lazy-loading article feed with React, improving load performance and user experience for continuous scrolling.],[Integrated SQL-backed storage system to manage articles and metadata, enabling efficient retrieval and filtering.],[Delivered production-ready features like refresh functionality, dark mode toggle, and scalable backend APIs, demonstrating end-to-end software development skills.],)
+    #v(design-highlights-top-margin);#highlights([Built a full-stack web application that automatically summarizes and curates news articles using LLM-based NLP pipelines.],[Improved UI\/UX and shipped production-ready features with React \(lazy-loading feed, refresh functionality, scalable backend APIs\)],[Integrated SQL-backed storage system to manage articles and metadata, enabling efficient retrieval and filtering.],)
   ],
 )
 
@@ -600,7 +566,7 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Built a computational physics simulation solving nonlinear differential equations to model pendulum motion.],[Designed data visualization pipeline with Matplotlib, producing clear, interpretable insights on oscillatory and rotational dynamics.],[Showcased ability to apply numerical methods and mathematical modeling to real-world physics problems.],)
+    #v(design-highlights-top-margin);#highlights([Built a computational physics simulation solving nonlinear differential equations to model pendulum motion.],[Designed data visualization pipeline with Matplotlib, producing clear, interpretable insights on oscillatory and rotational dynamics.],)
   ],
 )
 
@@ -621,20 +587,53 @@
 
 
 
-== Skills
+== Experience
 
 
-#one-col-entry(
-  content: [#strong[Languages:] Python, JavaScript, TypeScript, Java, C]
+#two-col-entry(
+  left-content: [
+    #strong[Media Executive], Student Athletic Council, St. Robert CHS 
+  ],
+  right-content: [
+    Sept 2021 – June 2025
+  ],
 )
+#one-col-entry(
+  content: [
+    #v(design-highlights-top-margin);#highlights([Produced and managed digital media strategy for school athletics, generating 200,000+ engagements in one year through sports highlight reels and social campaigns.],[Collaborated with cross-functional teams to build community engagement, demonstrating leadership and project management skills.],)
+  ],
+)
+
 #v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [#strong[Technologies\/Frameworks:] React, HTML\/CSS, Git, MySQL, PostgreSQL, Node.js, Express]
+#two-col-entry(
+  left-content: [
+    #strong[Camp Counsellor], Muskoka Woods Summer Camp 
+  ],
+  right-content: [
+    Sept 2023 – Sept 2023
+  ],
 )
+#one-col-entry(
+  content: [
+    #v(design-highlights-top-margin);#highlights([Led 20+ high school campers in daily activities, ensuring safety, teamwork, and problem-solving in high-pressure environments],)
+  ],
+)
+
 #v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [#strong[Libraries:] Pandas, NumPy, Matplotlib, scikit-learn]
+#two-col-entry(
+  left-content: [
+    #strong[Center Assistant], Kumon Institute Education 
+  ],
+  right-content: [
+    Aug 2021 – May 2022
+  ],
 )
+#one-col-entry(
+  content: [
+    #v(design-highlights-top-margin);#highlights([Tutored math\/reading, strengthening communication and clarity in teaching],)
+  ],
+)
+
 
 
 == Certifications and Achievements
@@ -649,11 +648,7 @@
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [- Certificate of Distinction | CEMC Pascal, Euclid, CSMC],
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [- 4x Honour Roll | IB Diploma Graduate],
+  content: [- Sports Medicine ILC Qualifier | HOSA SLC],
 )
 
 
