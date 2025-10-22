@@ -19,7 +19,7 @@
 #let design-section-titles-font-size = 1.2em
 #let design-section-titles-type = "with-parial-line"
 #let design-section-titles-vertical-space-above = 0.4cm
-#let design-section-titles-vertical-space-below = 0.3cm
+#let design-section-titles-vertical-space-below = 0.4cm
 #let design-section-titles-small-caps = false
 #let design-links-use-external-link-icon = false
 #let design-text-font-size = 10pt
@@ -43,9 +43,9 @@
 #let design-highlights-bullet = "•"
 #let design-highlights-top-margin = 0.25cm
 #let design-highlights-left-margin = 0cm
-#let design-highlights-vertical-space-between-highlights = 0.19cm
+#let design-highlights-vertical-space-between-highlights = 0.2cm
 #let design-highlights-horizontal-space-between-bullet-and-highlights = 0.3em
-#let design-entries-vertical-space-between-entries = 0.3cm
+#let design-entries-vertical-space-between-entries = 0.35cm
 #let design-entries-date-and-location-width = 4.15cm
 #let design-entries-allow-page-break-in-entries = true
 #let design-entries-horizontal-space-between-columns = 0.1cm
@@ -451,7 +451,7 @@
 
 // Print connections:
 #let connections-list = (
-  [#fa-icon("location-dot", size: 0.9em) #h(0.05cm)Hamilton, Ontario],
+  [#fa-icon("location-dot", size: 0.9em) #h(0.05cm)Toronto, Ontario],
   [#box(original-link("mailto:andrewwuca@gmail.com")[#fa-icon("envelope", size: 0.9em) #h(0.05cm)andrewwuca\@gmail.com])],
   [#box(original-link("tel:+1-647-451-7652")[#fa-icon("phone", size: 0.9em) #h(0.05cm)\(647\) 451-7652])],
   [#box(original-link("https://github.com/andrewwu13")[#fa-icon("github", size: 0.9em) #h(0.05cm)andrewwu13])],
@@ -511,15 +511,15 @@
 
 
 #one-col-entry(
-  content: [#strong[Languages:] Python, JavaScript, TypeScript, Java, C]
+  content: [#strong[Languages:] Python, TypeScript, JavaScript, Java, HTML\/CSS, SQL]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Technologies\/Frameworks:] React, HTML\/CSS, Git, MySQL, PostgreSQL, Node.js, Express]
+  content: [#strong[Technologies\/Frameworks:] Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Libraries:] Pandas, NumPy, Matplotlib, scikit-learn]
+  content: [#strong[Libraries:] FastAPI, Pandas, NumPy, Matplotlib, scikit-learn]
 )
 
 
@@ -528,7 +528,7 @@
 
 #two-col-entry(
   left-content: [
-    #strong[AI-Powered News Summarization Platform] 
+    #strong[NewKnew | fdsf] 
   ],
   right-content: [
     Sept 2025
@@ -536,14 +536,14 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Built a full-stack web application that automatically summarizes and curates news articles using LLM-based NLP pipelines.],[Improved UI\/UX and shipped production-ready features with React \(lazy-loading feed, refresh functionality, scalable backend APIs\)],[Integrated SQL-backed storage system to manage articles and metadata, enabling efficient retrieval and filtering.],)
+    #v(design-highlights-top-margin);#highlights([Developed GPT-4-powered news platform, delivering concise insights on trending tech articles.],[Implemented #strong[Express\/Node.js] backend with a #strong[PostgreSQL] database, optimizing query performance and clustering articles via #strong[k-means], displayed through a responsive #strong[Next.js] frontend for personalized feeds and live topic updates.],[Automated data pipeline in #strong[Python] to scrape and preprocess #strong[500+] articles, reducing manual curation time by #strong[90\%].],)
   ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Optimization via Gradient Descent] 
+    #strong[Restaurant Location Optimization] 
   ],
   right-content: [
     Nov 2024
@@ -551,14 +551,14 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Implemented a scalable gradient descent algorithm to minimize cost functions, achieving optimized solutions for regression models and facility location problems],[Reduced computation time by applying vectorized operations in NumPy, demonstrating efficiency improvements in optimization workflows.],)
+    #v(design-highlights-top-margin);#highlights([Designed a profit-maximization model in #strong[Python] by non-linear cost function and implemented a gradient descent algorithm to converge on optimal restaurant coordinates.],[Addressed model limitations by integrating non-Euclidean geometric constraints, increasing accuracy by #strong[70\%].],)
   ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Dynamic System Simulation \(Wilberforce Pendulum\)] 
+    #strong[Wilberforce Pendulum Simulation] 
   ],
   right-content: [
     Feb 2025
@@ -566,7 +566,7 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Built a computational physics simulation solving nonlinear differential equations to model pendulum motion.],[Designed data visualization pipeline with Matplotlib, producing clear, interpretable insights on oscillatory and rotational dynamics.],)
+    #v(design-highlights-top-margin);#highlights([Built a computational physics simulation solving nonlinear differential equations to model pendulum motion.],[Designed data visualization pipeline with #strong[Matplotlib], producing clear insights on oscillatory and rotational dynamics.],)
   ],
 )
 
@@ -592,7 +592,22 @@
 
 #two-col-entry(
   left-content: [
-    #strong[Media Executive], Student Athletic Council, St. Robert CHS 
+    #strong[Full Stack Developer], McMaster Solar Car Project -- McMaster University
+  ],
+  right-content: [
+    Sept 2025 – present
+  ],
+)
+#one-col-entry(
+  content: [
+    #v(design-highlights-top-margin);#highlights([Designed and implemented an automated #strong[MkDocs documentation pipeline] integrated with #strong[GitHub Actions CI\/CD], streamlining team knowledge sharing and ensuring up-to-date docs.],[Implemented robust error handling via #strong[FastAPI] and #strong[Jinja2], improving platform reliability.],[Refactored #strong[Docker] deployment to streamline development, reducing setup time and environment errors for the team.],)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+#two-col-entry(
+  left-content: [
+    #strong[Media Executive], Student Athletic Council -- St. Robert CHS
   ],
   right-content: [
     Sept 2021 – June 2025
@@ -600,37 +615,7 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Produced and managed digital media strategy for school athletics, generating 200,000+ engagements in one year through sports highlight reels and social campaigns.],[Collaborated with cross-functional teams to build community engagement, demonstrating leadership and project management skills.],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Camp Counsellor], Muskoka Woods Summer Camp 
-  ],
-  right-content: [
-    Sept 2023 – Sept 2023
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Led 20+ high school campers in daily activities, ensuring safety, teamwork, and problem-solving in high-pressure environments],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Center Assistant], Kumon Institute Education 
-  ],
-  right-content: [
-    Aug 2021 – May 2022
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Tutored math\/reading, strengthening communication and clarity in teaching],)
+    #v(design-highlights-top-margin);#highlights([Produced and managed digital media strategy for school athletics, generating #strong[200,000+] engagements in one year through sports highlight reels and social campaigns.],[Collaborated with cross-functional teams to build community engagement, demonstrating leadership and project management skills.],)
   ],
 )
 

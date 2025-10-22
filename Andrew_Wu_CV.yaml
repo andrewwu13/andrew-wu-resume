@@ -1,6 +1,6 @@
 cv:
   name: Andrew Wu
-  location: Hamilton, Ontario
+  location: Toronto, Ontario
   email: andrewwuca@gmail.com
   phone: +1-647-451-7652
   website: 
@@ -32,32 +32,32 @@ cv:
            - "GPA: 4.0 (97%)"
     skills:
       - label: Languages
-        details: Python, JavaScript, TypeScript, Java, C++
+        details: Python, TypeScript, JavaScript, Java, HTML/CSS, SQL
       - label: Technologies/Frameworks
-        details: React, HTML/CSS, Git, MySQL, PostgreSQL, Node.js, Express
+        details: Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes,
       - label: Libraries
-        details: Pandas, NumPy, Matplotlib, scikit-learn
+        details: FastAPI, Pandas, NumPy, Matplotlib, scikit-learn
     projects:
-      - name: AI-Powered News Summarization Platform
+      - name: NewKnew
         date: 2025-09
         start_date: 
         end_date:
         location:
         summary:
         highlights:
-          - "Built a full-stack web application that automatically summarizes and curates news articles using LLM-based NLP pipelines."
-          - "Improved UI/UX and shipped production-ready features with React (lazy-loading feed, refresh functionality, scalable backend APIs)"
-          - "Integrated SQL-backed storage system to manage articles and metadata, enabling efficient retrieval and filtering."
-      - name: Optimization via Gradient Descent
+          - Developed GPT-4-powered news platform, delivering concise insights on trending tech articles.
+          - Implemented **Express/Node.js** backend with a **PostgreSQL** database, optimizing query performance and clustering articles via **k-means**, displayed through a responsive **Next.js** frontend for personalized feeds and live topic updates.
+          - Automated data pipeline in **Python** to scrape and preprocess **500+** articles, reducing manual curation time by **90%**.
+      - name: Restaurant Location Optimization
         date: 2024-11
         start_date: 
         end_date:
         location:
         summary:
         highlights:
-          - Implemented a scalable gradient descent algorithm to minimize cost functions, achieving optimized solutions for regression models and facility location problems
-          - Reduced computation time by applying vectorized operations in NumPy, demonstrating efficiency improvements in optimization workflows.
-      - name: Dynamic System Simulation (Wilberforce Pendulum)
+          - Designed a profit-maximization model in **Python** by non-linear cost function and implemented a gradient descent algorithm to converge on optimal restaurant coordinates. 
+          - Addressed model limitations by integrating non-Euclidean geometric constraints, increasing accuracy by **70%**. 
+      - name: Wilberforce Pendulum Simulation
         date: 2025-02
         start_date: 
         end_date:
@@ -65,7 +65,7 @@ cv:
         summary:
         highlights:
           - Built a computational physics simulation solving nonlinear differential equations to model pendulum motion.
-          - Designed data visualization pipeline with Matplotlib, producing clear, interpretable insights on oscillatory and rotational dynamics.
+          - Designed data visualization pipeline with **Matplotlib**, producing clear insights on oscillatory and rotational dynamics.
       - name: "Research Project: Biomechanical Landing Optimization"
         date: 2023-09
         start_date: 
@@ -76,34 +76,28 @@ cv:
           - Conducted research analyzing how variations in human landing techniques affect stress on musculoskeletal systems.
           - Applied statistical and computational methods to interpret results; authored a research paper synthesizing findings with potential applications in sports science and injury prevention.
     experience:
-      - company: Student Athletic Council, St. Robert CHS
+      - company: McMaster Solar Car Project
+        position: Full Stack Developer
+        date:
+        start_date: 2025-09
+        end_date: present
+        location: McMaster University
+        summary:
+        highlights:
+           - Designed and implemented an automated **MkDocs documentation pipeline** integrated with **GitHub Actions CI/CD**, streamlining team knowledge sharing and ensuring up-to-date docs. 
+           - Implemented robust error handling via **FastAPI** and **Jinja2**, improving platform reliability.  
+           - Refactored **Docker** deployment to streamline development, reducing setup time and environment errors for the team.
+      - company: Student Athletic Council
         position: Media Executive
         date:
         start_date: 2021-09
         end_date: 2025-06
-        location: 
+        location: St. Robert CHS
         summary:
         highlights:
-          - Produced and managed digital media strategy for school athletics, generating 200,000+ engagements in one year through sports highlight reels and social campaigns.
+          - Produced and managed digital media strategy for school athletics, generating **200,000+** engagements in one year through sports highlight reels and social campaigns.
           - Collaborated with cross-functional teams to build community engagement, demonstrating leadership and project management skills.
-      - company: Muskoka Woods Summer Camp
-        position: Camp Counsellor
-        date:
-        start_date: 2023-09
-        end_date: 2023-09
-        location:
-        summary:
-        highlights:
-           - Led 20+ high school campers in daily activities, ensuring safety, teamwork, and problem-solving in high-pressure environments
-      - company: Kumon Institute Education
-        position: Center Assistant
-        date:
-        start_date: 2021-08
-        end_date: 2022-05
-        location:
-        summary:
-        highlights:
-           - Tutored math/reading, strengthening communication and clarity in teaching
+  
     certifications_and_achievements:
       - bullet: "Canadian Youth Physicist's Tournament Gold Medal | IYPT"
       - bullet: "Certified B1 French Speaker | Diplôme D'études En Langue Française"
@@ -154,13 +148,12 @@ design:
     small_caps: false
     line_thickness: 0.5pt
     vertical_space_above: 0.4cm
-    vertical_space_below: 0.3cm
-    line_type: with-full-line
+    vertical_space_below: 0.4cm
   entries:
     date_and_location_width: 4.15cm
     left_and_right_margin: 0cm
     horizontal_space_between_columns: 0.1cm
-    vertical_space_between_entries: 0.3cm
+    vertical_space_between_entries: 0.35cm
     allow_page_break_in_sections: true
     allow_page_break_in_entries: true
     short_second_row: false
@@ -169,7 +162,7 @@ design:
     bullet: •
     top_margin: 0.25cm
     left_margin: 0cm
-    vertical_space_between_highlights: 0.19cm
+    vertical_space_between_highlights: 0.2cm
     horizontal_space_between_bullet_and_highlight: 0.3em
     summary_left_margin: 0cm
   entry_types:

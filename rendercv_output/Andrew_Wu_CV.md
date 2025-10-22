@@ -2,7 +2,7 @@
 
 - Phone: +1 647 451 7652
 - Email: [andrewwuca@gmail.com](mailto:andrewwuca@gmail.com)
-- Location: Hamilton, Ontario
+- Location: Toronto, Ontario
 - GitHub: [andrewwu13](https://github.com/andrewwu13)
 - LinkedIn: [andrew-wu13](https://linkedin.com/in/andrew-wu13)
 
@@ -21,29 +21,29 @@
 
 # Skills
 
-- Languages: Python, JavaScript, TypeScript, Java, C++
-- Technologies/Frameworks: React, HTML/CSS, Git, MySQL, PostgreSQL, Node.js, Express
-- Libraries: Pandas, NumPy, Matplotlib, scikit-learn
+- Languages: Python, TypeScript, JavaScript, Java, HTML/CSS, SQL
+- Technologies/Frameworks: Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes,
+- Libraries: FastAPI, Pandas, NumPy, Matplotlib, scikit-learn
 # Projects
 
-## AI-Powered News Summarization Platform
+## NewKnew | fdsf
 
 - Sept 2025
-- Built a full-stack web application that automatically summarizes and curates news articles using LLM-based NLP pipelines.
-- Improved UI/UX and shipped production-ready features with React (lazy-loading feed, refresh functionality, scalable backend APIs)
-- Integrated SQL-backed storage system to manage articles and metadata, enabling efficient retrieval and filtering.
+- Developed GPT-4-powered news platform, delivering concise insights on trending tech articles.
+- Implemented **Express/Node.js** backend with a **PostgreSQL** database, optimizing query performance and clustering articles via **k-means**, displayed through a responsive **Next.js** frontend for personalized feeds and live topic updates.
+- Automated data pipeline in **Python** to scrape and preprocess **500+** articles, reducing manual curation time by **90%**.
 
-## Optimization via Gradient Descent
+## Restaurant Location Optimization
 
 - Nov 2024
-- Implemented a scalable gradient descent algorithm to minimize cost functions, achieving optimized solutions for regression models and facility location problems
-- Reduced computation time by applying vectorized operations in NumPy, demonstrating efficiency improvements in optimization workflows.
+- Designed a profit-maximization model in **Python** by non-linear cost function and implemented a gradient descent algorithm to converge on optimal restaurant coordinates.
+- Addressed model limitations by integrating non-Euclidean geometric constraints, increasing accuracy by **70%**.
 
-## Dynamic System Simulation (Wilberforce Pendulum)
+## Wilberforce Pendulum Simulation
 
 - Feb 2025
 - Built a computational physics simulation solving nonlinear differential equations to model pendulum motion.
-- Designed data visualization pipeline with Matplotlib, producing clear, interpretable insights on oscillatory and rotational dynamics.
+- Designed data visualization pipeline with **Matplotlib**, producing clear insights on oscillatory and rotational dynamics.
 
 ## Research Project: Biomechanical Landing Optimization
 
@@ -53,21 +53,20 @@
 
 # Experience
 
-## Student Athletic Council, St. Robert CHS, Media Executive
+## McMaster Solar Car Project, Full Stack Developer
+
+- Sept 2025 – present
+- McMaster University
+- Designed and implemented an automated **MkDocs documentation pipeline** integrated with **GitHub Actions CI/CD**, streamlining team knowledge sharing and ensuring up-to-date docs.
+- Implemented robust error handling via **FastAPI** and **Jinja2**, improving platform reliability.
+- Refactored **Docker** deployment to streamline development, reducing setup time and environment errors for the team.
+
+## Student Athletic Council, Media Executive
 
 - Sept 2021 – June 2025
-- Produced and managed digital media strategy for school athletics, generating 200,000+ engagements in one year through sports highlight reels and social campaigns.
+- St. Robert CHS
+- Produced and managed digital media strategy for school athletics, generating **200,000+** engagements in one year through sports highlight reels and social campaigns.
 - Collaborated with cross-functional teams to build community engagement, demonstrating leadership and project management skills.
-
-## Muskoka Woods Summer Camp, Camp Counsellor
-
-- Sept 2023 – Sept 2023
-- Led 20+ high school campers in daily activities, ensuring safety, teamwork, and problem-solving in high-pressure environments
-
-## Kumon Institute Education, Center Assistant
-
-- Aug 2021 – May 2022
-- Tutored math/reading, strengthening communication and clarity in teaching
 
 # Certifications and Achievements
 
