@@ -519,7 +519,7 @@
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Libraries:] FastAPI, Pandas, NumPy, Matplotlib, scikit-learn]
+  content: [#strong[Libraries:] FastAPI, scikit-learn, Matplotlib, NumPy, Pandas]
 )
 
 
@@ -528,7 +528,7 @@
 
 #two-col-entry(
   left-content: [
-    #strong[NewKnew | fdsf] 
+    #strong[NewKnew] 
   ],
   right-content: [
     Sept 2025
@@ -551,7 +551,7 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Designed a profit-maximization model in #strong[Python] by non-linear cost function and implemented a gradient descent algorithm to converge on optimal restaurant coordinates.],[Addressed model limitations by integrating non-Euclidean geometric constraints, increasing accuracy by #strong[70\%].],)
+    #v(design-highlights-top-margin);#highlights([Designed a profit-maximization model with #strong[NumPy] using a non-linear cost function and implemented a gradient descent algorithm to converge on optimal restaurant coordinates.],[Addressed model limitations by integrating non-Euclidean geometric constraints, increasing accuracy by #strong[70\%].],)
   ],
 )
 
@@ -600,7 +600,37 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Designed and implemented an automated #strong[MkDocs documentation pipeline] integrated with #strong[GitHub Actions CI\/CD], streamlining team knowledge sharing and ensuring up-to-date docs.],[Implemented robust error handling via #strong[FastAPI] and #strong[Jinja2], improving platform reliability.],[Refactored #strong[Docker] deployment to streamline development, reducing setup time and environment errors for the team.],)
+    #v(design-highlights-top-margin);#highlights([Designed and implemented an automated #strong[MkDocs documentation pipeline] integrated with #strong[GitHub Actions CI\/CD], streamlining team knowledge sharing and ensuring up-to-date docs.],[Designed and deployed #strong[LGTM] stack \(Loki, Grafana, Tempo, Mimir\) to monitor operations and track #strong[OpenTelemetry] metrics and logs through profiled #strong[Docker] containers.],[Implemented robust error handling via #strong[FastAPI] and #strong[Jinja2], improving platform reliability.],)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+#two-col-entry(
+  left-content: [
+    #strong[Software Developer], McMaster Artificial Intelligence Society -- McMaster University
+  ],
+  right-content: [
+    Oct 2025 – present
+  ],
+)
+#one-col-entry(
+  content: [
+    #v(design-highlights-top-margin);#highlights([Developed a #strong[Next.js] + #strong[Fast-API] web application that performs real-time deepfake detection from user uploads.],[Integrated async model serving, batch processing, and GPU-accelerated inference to optimize latency and throughput.],[Deployed ML inference pipeline with Docker and Kubernetes, leveraging NGNIX load balancing and Redis caching on cloud infrastructure.],)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+#two-col-entry(
+  left-content: [
+    #strong[Software Developer], McMaster Exoskeleton -- McMaster University
+  ],
+  right-content: [
+    Sept 2025 – present
+  ],
+)
+#one-col-entry(
+  content: [
+    #v(design-highlights-top-margin);#highlights([f],[f],[f],)
   ],
 )
 

@@ -23,10 +23,10 @@
 
 - Languages: Python, TypeScript, JavaScript, Java, HTML/CSS, SQL
 - Technologies/Frameworks: Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes,
-- Libraries: FastAPI, Pandas, NumPy, Matplotlib, scikit-learn
+- Libraries: FastAPI, scikit-learn, Matplotlib, NumPy, Pandas
 # Projects
 
-## NewKnew | fdsf
+## NewKnew
 
 - Sept 2025
 - Developed GPT-4-powered news platform, delivering concise insights on trending tech articles.
@@ -36,7 +36,7 @@
 ## Restaurant Location Optimization
 
 - Nov 2024
-- Designed a profit-maximization model in **Python** by non-linear cost function and implemented a gradient descent algorithm to converge on optimal restaurant coordinates.
+- Designed a profit-maximization model with **NumPy** using a non-linear cost function and implemented a gradient descent algorithm to converge on optimal restaurant coordinates.
 - Addressed model limitations by integrating non-Euclidean geometric constraints, increasing accuracy by **70%**.
 
 ## Wilberforce Pendulum Simulation
@@ -58,8 +58,24 @@
 - Sept 2025 – present
 - McMaster University
 - Designed and implemented an automated **MkDocs documentation pipeline** integrated with **GitHub Actions CI/CD**, streamlining team knowledge sharing and ensuring up-to-date docs.
+- Designed and deployed **LGTM** stack (Loki, Grafana, Tempo, Mimir) to monitor operations and track **OpenTelemetry** metrics and logs through profiled **Docker** containers.
 - Implemented robust error handling via **FastAPI** and **Jinja2**, improving platform reliability.
-- Refactored **Docker** deployment to streamline development, reducing setup time and environment errors for the team.
+
+## McMaster Artificial Intelligence Society, Software Developer
+
+- Oct 2025 – present
+- McMaster University
+- Developed a **Next.js** + **Fast-API** web application that performs real-time deepfake detection from user uploads.
+- Integrated async model serving, batch processing, and GPU-accelerated inference to optimize latency and throughput.
+- Deployed ML inference pipeline with Docker and Kubernetes, leveraging NGNIX load balancing and Redis caching on cloud infrastructure.
+
+## McMaster Exoskeleton, Software Developer
+
+- Sept 2025 – present
+- McMaster University
+- f
+- f
+- f
 
 ## Student Athletic Council, Media Executive
 
