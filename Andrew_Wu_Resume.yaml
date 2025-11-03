@@ -1,9 +1,9 @@
 cv:
   name: Andrew Wu
-  location: Toronto, Ontario
+  location:
   email: andrewwuca@gmail.com
   phone: +1-647-451-7652
-  website: 
+  website: https://www.andrewwu.ca/
   social_networks:
     - network: GitHub
       username: andrewwu13
@@ -12,81 +12,15 @@ cv:
   sections:
     education:
       - institution: McMaster University
-        area: Engineering
-        degree: 
+        area: Software Engineering
+        degree: B. Eng
         date:
-        start_date: 2025-09
-        end_date: present
+        start_date: 
+        end_date: 2029-05
         location: Hamilton, Ontario
         summary:
         highlights:
-      - institution: St. Robert Catholic High School
-        area: IB Diploma
-        degree: 
-        date:
-        start_date: 2021-09
-        end_date: 2025-06
-        location: 
-        summary: 
-        highlights:
-           - "GPA: 4.0 (97%)"
-    skills:
-      - label: Languages
-        details: Python, TypeScript, JavaScript, Java, HTML/CSS, SQL
-      - label: Technologies/Frameworks
-        details: Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes,
-      - label: Libraries
-        details: FastAPI, scikit-learn, Matplotlib, NumPy, Pandas
-    projects:
-      - name: NewKnew
-        date: 2025-09
-        start_date: 
-        end_date:
-        location:
-        summary:
-        highlights:
-          - Developed GPT-4-powered news platform, delivering concise insights on trending tech articles.
-          - Implemented **Express/Node.js** backend with a **PostgreSQL** database, optimizing query performance and clustering articles via **k-means**, displayed through a responsive **Next.js** frontend for personalized feeds and live topic updates.
-          - Automated data pipeline in **Python** to scrape and preprocess **500+** articles, reducing manual curation time by **90%**.
-      - name: Restaurant Location Optimization
-        date: 2024-11
-        start_date: 
-        end_date:
-        location:
-        summary:
-        highlights:
-          - Designed a profit-maximization model with **NumPy** using a non-linear cost function and implemented a gradient descent algorithm to converge on optimal restaurant coordinates. 
-          - Addressed model limitations by integrating non-Euclidean geometric constraints, increasing accuracy by **70%**. 
-      - name: Wilberforce Pendulum Simulation
-        date: 2025-02
-        start_date: 
-        end_date:
-        location:
-        summary:
-        highlights:
-          - Built a computational physics simulation solving nonlinear differential equations to model pendulum motion.
-          - Designed data visualization pipeline with **Matplotlib**, producing clear insights on oscillatory and rotational dynamics.
-      - name: "Research Project: Biomechanical Landing Optimization"
-        date: 2023-09
-        start_date: 
-        end_date:
-        location:
-        summary:
-        highlights:
-          - Conducted research analyzing how variations in human landing techniques affect stress on musculoskeletal systems.
-          - Applied statistical and computational methods to interpret results; authored a research paper synthesizing findings with potential applications in sports science and injury prevention.
     experience:
-      - company: McMaster Solar Car Project
-        position: Full Stack Developer
-        date:
-        start_date: 2025-09
-        end_date: present
-        location: McMaster University
-        summary:
-        highlights:
-           - Designed and implemented an automated **MkDocs documentation pipeline** integrated with **GitHub Actions CI/CD**, streamlining team knowledge sharing and ensuring up-to-date docs. 
-           - Designed and deployed **LGTM** stack (Loki, Grafana, Tempo, Mimir) to monitor operations and track **OpenTelemetry** metrics and logs through profiled **Docker** containers. 
-           - Implemented robust error handling via **FastAPI** and **Jinja2**, improving platform reliability.  
       - company: McMaster Artificial Intelligence Society
         position: Software Developer 
         date:
@@ -95,9 +29,30 @@ cv:
         location: McMaster University
         summary:
         highlights:
-           - Developed a **Next.js** + **Fast-API** web application that performs real-time deepfake detection from user uploads. 
-           - Integrated async model serving, batch processing, and GPU-accelerated inference to optimize latency and throughput.
-           - Deployed ML inference pipeline with Docker and Kubernetes, leveraging NGNIX load balancing and Redis caching on cloud infrastructure.
+           - Developed a **Next.js** + **FastAPI** web application that performs real-time deepfake detection from user uploads
+           - Integrated async model serving, batch processing, and GPU-accelerated inference to optimize latency and throughput
+           - Deployed ML inference pipeline with **Docker** and **Kubernetes**, leveraging **NGNIX load balancing** and **Redis caching** on cloud infrastructure
+      - company: Google Developer Groups
+        position: Open Source Developer
+        date:
+        start_date: 2025-09
+        end_date: present
+        location: McMaster University
+        summary:
+        highlights:
+           - Designed a real-time **React** + ** Chrome Manifest V3** extension interface enabling natural language web automation
+           - Integrated **FastAPI** and **WebSocket** communication to display live agent reasoning, task progress, and DOM action traces
+           - Enchanced UI interaction reliability by **30%** through integrating DOM text parsing with **Tesseract OCR** for element identification across diverse webpage layouts
+      - company: McMaster Solar Car Project
+        position: Full Stack Developer
+        date:
+        start_date: 2025-09
+        end_date: present
+        location: McMaster University
+        summary:
+        highlights:
+           - Designed and deployed **LGTM** stack (Loki, Grafana, Tempo, Mimir) to monitor operations and track **OpenTelemetry** metrics and logs through profiled **Docker** containers  and integrated with **GitHub Actions CI/CD**
+           - Implemented robust error handling via **FastAPI** and **Jinja2**, improving platform reliability
       - company: McMaster Exoskeleton
         position: Software Developer
         date:
@@ -106,24 +61,46 @@ cv:
         location: McMaster University
         summary:
         highlights:
-           - f
-           - f
-           - f
-      - company: Student Athletic Council
-        position: Media Executive
-        date:
-        start_date: 2021-09
-        end_date: 2025-06
-        location: St. Robert CHS
+          - Developed and integrated an **LSTM**-based gait prediction algorithm with **PyTorch**, achieving **85% accuracy** (±5°) in estimating joint angles from IMU sensor data
+          - Optimized model generalization through diverse training data, allowing adaptation to varied gait patterns, including stair climbing and walking at multiple speeds and stride lengths
+    projects:
+      - name: NewKnew
+        date: 2025-09
+        start_date:
+        end_date:
+        location:
+        summary: 
+        stack: Next.js, React.js, Express.js, Node.js, PostgreSQL, Python
+        highlights:
+          - Developed GPT-4-powered news platform, delivering concise insights on trending tech articles
+          - Implemented **Express/Node.js** backend with a **PostgreSQL** database, optimizing query performance and clustering articles via **k-means**, displayed through a responsive **Next.js** frontend for personalized feeds and live topic updates
+          - Automated data pipeline in **Python** to scrape and preprocess **500+** articles, reducing manual curation time by **90%**
+      - name: Restaurant Location Optimization
+        date: 2024-11
+        start_date: 
+        end_date:
+        location:
         summary:
         highlights:
-          - Produced and managed digital media strategy for school athletics, generating **200,000+** engagements in one year through sports highlight reels and social campaigns.
-          - Collaborated with cross-functional teams to build community engagement, demonstrating leadership and project management skills.
-  
-    certifications_and_achievements:
-      - bullet: "Canadian Youth Physicist's Tournament Gold Medal | IYPT"
-      - bullet: "Certified B1 French Speaker | Diplôme D'études En Langue Française"
-      - bullet: "Sports Medicine ILC Qualifier | HOSA SLC"
+          - Designed a profit-maximization model with **NumPy** using a non-linear cost function and implemented a gradient descent algorithm to converge on optimal restaurant coordinates
+          - Addressed model limitations by integrating non-Euclidean geometric constraints, increasing accuracy by **70%** 
+      - name: Wilberforce Pendulum Simulation
+        date: 2025-02
+        start_date: 
+        end_date:
+        location:
+        summary:
+        highlights:
+          - Built a computational physics simulation solving nonlinear differential equations to model pendulum motion
+          - Designed data visualization pipeline with **Matplotlib**, producing clear insights on oscillatory and rotational dynamics
+    skills:
+      - label: Languages
+        details: Python, TypeScript, JavaScript, Java, HTML/CSS, SQL
+      - label: Technologies/Frameworks
+        details: Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes,
+      - label: Libraries
+        details: FastAPI, scikit-learn, Matplotlib, NumPy, Pandas
+
 design:
   theme: engineeringresumes
   page:
@@ -191,21 +168,29 @@ design:
     one_line_entry:
       template: '**LABEL:** DETAILS'
     education_entry:
-      main_column_first_row_template: '**INSTITUTION**, DEGREE in AREA -- LOCATION'
+      main_column_first_row_template: |-
+        **INSTITUTION**
+        *DEGREE in AREA*
       degree_column_template:
       degree_column_width: 1cm
       main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS
-      date_and_location_column_template: DATE
+      date_and_location_column_template: |-
+        *LOCATION*
+        *DATE*
     normal_entry:
+    # figure out how to add a tech stack 
       main_column_first_row_template: '**NAME** -- **LOCATION**'
       main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS
-      date_and_location_column_template: DATE
+      date_and_location_column_template: DATE 
     experience_entry:
-      main_column_first_row_template: '**POSITION**, COMPANY -- LOCATION'
+    # add location
+      main_column_first_row_template: |- 
+        **COMPANY**
+        POSITION
       main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS
@@ -261,6 +246,6 @@ locale:
     - November
     - December
 rendercv_settings:
-  date: '2025-08-29'
+  date: '2025-10-30'
   render_command:
   bold_keywords: []

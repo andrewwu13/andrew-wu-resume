@@ -1,63 +1,72 @@
 
+((* set page_numbering_template_placeholders = {
+    "NAME": cv.name,
+    "PAGE_NUMBER": "\" + str(here().page()) + \"",
+    "TOTAL_PAGES": "\" + str(counter(page).final().first()) + \"",
+    "TODAY": today
+} *))
+((* set last_updated_date_template_placeholders = {
+    "TODAY": today,
+} *))
 #import "@preview/fontawesome:0.5.0": fa-icon
 
-#let name = "Andrew Wu"
-#let locale-catalog-page-numbering-style = context { "Andrew Wu - Page " + str(here().page()) + " of " + str(counter(page).final().first()) + "" }
-#let locale-catalog-last-updated-date-style = ""
-#let locale-catalog-language = "en"
-#let design-page-size = "us-letter"
-#let design-section-titles-font-size = 1.2em
-#let design-colors-text = rgb(0, 0, 0)
-#let design-colors-section-titles = rgb(0, 0, 0)
-#let design-colors-last-updated-date-and-page-numbering = rgb(128, 128, 128)
-#let design-colors-name = rgb(0, 0, 0)
-#let design-colors-connections = rgb(0, 0, 0)
-#let design-colors-links = rgb(0, 0, 0)
-#let design-section-titles-font-family = "XCharter"
-#let design-section-titles-bold = true
-#let design-section-titles-line-thickness = 0.5pt
-#let design-section-titles-font-size = 1.2em
-#let design-section-titles-type = "with-parial-line"
-#let design-section-titles-vertical-space-above = 0.4cm
-#let design-section-titles-vertical-space-below = 0.4cm
-#let design-section-titles-small-caps = false
-#let design-links-use-external-link-icon = false
-#let design-text-font-size = 10pt
-#let design-text-leading = 0.6em
-#let design-text-font-family = "XCharter"
-#let design-text-alignment = "justified"
-#let design-text-date-and-location-column-alignment = right
-#let design-header-photo-width = 3.5cm
-#let design-header-use-icons-for-connections = true
-#let design-header-name-font-family = "XCharter"
-#let design-header-name-font-size = 25pt
-#let design-header-name-bold = false
-#let design-header-connections-font-family = "XCharter"
-#let design-header-vertical-space-between-name-and-connections = 0.7cm
-#let design-header-vertical-space-between-connections-and-first-section = 0.7cm
-#let design-header-use-icons-for-connections = true
-#let design-header-horizontal-space-between-connections = 0.5cm
-#let design-header-separator-between-connections = "|"
-#let design-header-alignment = center
-#let design-highlights-summary-left-margin = 0cm
-#let design-highlights-bullet = "•"
-#let design-highlights-top-margin = 0.25cm
-#let design-highlights-left-margin = 0cm
-#let design-highlights-vertical-space-between-highlights = 0.2cm
-#let design-highlights-horizontal-space-between-bullet-and-highlights = 0.3em
-#let design-entries-vertical-space-between-entries = 0.35cm
-#let design-entries-date-and-location-width = 4.15cm
-#let design-entries-allow-page-break-in-entries = true
-#let design-entries-horizontal-space-between-columns = 0.1cm
-#let design-entries-left-and-right-margin = 0cm
-#let design-page-top-margin = 1.5cm
-#let design-page-bottom-margin = 1.5cm
-#let design-page-left-margin = 1.5cm
-#let design-page-right-margin = 1.5cm
-#let design-page-show-last-updated-date = true
-#let design-page-show-page-numbering = false
-#let design-links-underline = true
-#let design-entry-types-education-entry-degree-column-width = 1cm
+#let name = "<<cv.name|remove_typst_commands>>"
+#let locale-catalog-page-numbering-style = context { "<<locale.page_numbering_template|replace_placeholders_with_actual_values(page_numbering_template_placeholders)>>" }
+#let locale-catalog-last-updated-date-style = "<<locale.last_updated_date_template|replace_placeholders_with_actual_values(last_updated_date_template_placeholders)>>"
+#let locale-catalog-language = "<<locale.language>>"
+#let design-page-size = "<<design.page.size>>"
+#let design-section-titles-font-size = <<design.section_titles.font_size>>
+#let design-colors-text = <<design.colors.text.as_rgb()>>
+#let design-colors-section-titles = <<design.colors.section_titles.as_rgb()>>
+#let design-colors-last-updated-date-and-page-numbering = <<design.colors.last_updated_date_and_page_numbering.as_rgb()>>
+#let design-colors-name = <<design.colors.name.as_rgb()>>
+#let design-colors-connections = <<design.colors.connections.as_rgb()>>
+#let design-colors-links = <<design.colors.links.as_rgb()>>
+#let design-section-titles-font-family = "<<design.section_titles.font_family>>"
+#let design-section-titles-bold = <<design.section_titles.bold|lower>>
+#let design-section-titles-line-thickness = <<design.section_titles.line_thickness>>
+#let design-section-titles-font-size = <<design.section_titles.font_size>>
+#let design-section-titles-type = "<<design.section_titles.type>>"
+#let design-section-titles-vertical-space-above = <<design.section_titles.vertical_space_above>>
+#let design-section-titles-vertical-space-below = <<design.section_titles.vertical_space_below>>
+#let design-section-titles-small-caps = <<design.section_titles.small_caps|lower>>
+#let design-links-use-external-link-icon = <<design.links.use_external_link_icon|lower>>
+#let design-text-font-size = <<design.text.font_size>>
+#let design-text-leading = <<design.text.leading>>
+#let design-text-font-family = "<<design.text.font_family>>"
+#let design-text-alignment = "<<design.text.alignment>>"
+#let design-text-date-and-location-column-alignment = <<design.text.date_and_location_column_alignment>>
+#let design-header-photo-width = <<design.header.photo_width>>
+#let design-header-use-icons-for-connections = <<design.header.use_icons_for_connections|lower>>
+#let design-header-name-font-family = "<<design.header.name_font_family>>"
+#let design-header-name-font-size = <<design.header.name_font_size>>
+#let design-header-name-bold = <<design.header.name_bold|lower>>
+#let design-header-connections-font-family = "<<design.header.connections_font_family>>"
+#let design-header-vertical-space-between-name-and-connections = <<design.header.vertical_space_between_name_and_connections>>
+#let design-header-vertical-space-between-connections-and-first-section = <<design.header.vertical_space_between_connections_and_first_section>>
+#let design-header-use-icons-for-connections = <<design.header.use_icons_for_connections|lower>>
+#let design-header-horizontal-space-between-connections = <<design.header.horizontal_space_between_connections>>
+#let design-header-separator-between-connections = "<<design.header.separator_between_connections>>"
+#let design-header-alignment = <<design.header.alignment>>
+#let design-highlights-summary-left-margin = <<design.highlights.summary_left_margin>>
+#let design-highlights-bullet = "<<design.highlights.bullet>>"
+#let design-highlights-top-margin = <<design.highlights.top_margin>>
+#let design-highlights-left-margin = <<design.highlights.left_margin>>
+#let design-highlights-vertical-space-between-highlights = <<design.highlights.vertical_space_between_highlights>>
+#let design-highlights-horizontal-space-between-bullet-and-highlights = <<design.highlights.horizontal_space_between_bullet_and_highlight>>
+#let design-entries-vertical-space-between-entries = <<design.entries.vertical_space_between_entries>>
+#let design-entries-date-and-location-width = <<design.entries.date_and_location_width>>
+#let design-entries-allow-page-break-in-entries = <<design.entries.allow_page_break_in_entries|lower>>
+#let design-entries-horizontal-space-between-columns = <<design.entries.horizontal_space_between_columns>>
+#let design-entries-left-and-right-margin = <<design.entries.left_and_right_margin>>
+#let design-page-top-margin = <<design.page.top_margin>>
+#let design-page-bottom-margin = <<design.page.bottom_margin>>
+#let design-page-left-margin = <<design.page.left_margin>>
+#let design-page-right-margin = <<design.page.right_margin>>
+#let design-page-show-last-updated-date = <<design.page.show_last_updated_date|lower>>
+#let design-page-show-page-numbering = <<design.page.show_page_numbering|lower>>
+#let design-links-underline = <<design.links.underline|lower>>
+#let design-entry-types-education-entry-degree-column-width = <<design.entry_types.education_entry.degree_column_width>>
 #let date = datetime.today()
 
 // Metadata:
@@ -313,7 +322,11 @@
     let ending-index = starting-index + 1
     while (
       measure(connections-list.slice(starting-index, ending-index).join(separator)).width
+      ((* if cv.photo *))
+        < page.width - left-sum-right-margin - design-header-photo-width * 1.1
+      ((* else *))
         < page.width - left-sum-right-margin
+      ((* endif *))
     ) {
       ending-index = ending-index + 1
       if ending-index > connections-list.len() {
@@ -446,184 +459,3 @@
     width: 100%,
   )
 ]
-
-= Andrew Wu
-
-// Print connections:
-#let connections-list = (
-  [#box(original-link("mailto:andrewwuca@gmail.com")[#fa-icon("envelope", size: 0.9em) #h(0.05cm)andrewwuca\@gmail.com])],
-  [#box(original-link("tel:+1-647-451-7652")[#fa-icon("phone", size: 0.9em) #h(0.05cm)\(647\) 451-7652])],
-  [#box(original-link("https://www.andrewwu.ca/")[#fa-icon("link", size: 0.9em) #h(0.05cm)www.andrewwu.ca])],
-  [#box(original-link("https://github.com/andrewwu13")[#fa-icon("github", size: 0.9em) #h(0.05cm)andrewwu13])],
-  [#box(original-link("https://linkedin.com/in/andrew-wu13")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)andrew-wu13])],
-)
-#connections(connections-list)
-
-
-
-== Education
-
-
-// YES DATE, NO DEGREE
-#two-col-entry(
-  left-content: [
-    #strong[McMaster University]
-
-#emph[B. Eng in Software Engineering]
-  ],
-  right-content: [
-    #emph[Hamilton, Ontario]
-
-#emph[May 2029]
-  ],
-)
-#block(
-  [
-    #set par(spacing: 0pt)
-    
-  ],
-  inset: (
-    left: design-entries-left-and-right-margin,
-    right: design-entries-left-and-right-margin,
-  ),
-)
-
-
-
-== Experience
-
-
-#two-col-entry(
-  left-content: [
-    #strong[McMaster Artificial Intelligence Society]
-
-Software Developer
-  ],
-  right-content: [
-    Oct 2025 – present
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Developed a #strong[Next.js] + #strong[FastAPI] web application that performs real-time deepfake detection from user uploads],[Integrated async model serving, batch processing, and GPU-accelerated inference to optimize latency and throughput],[Deployed ML inference pipeline with #strong[Docker] and #strong[Kubernetes], leveraging #strong[NGNIX load balancing] and #strong[Redis caching] on cloud infrastructure],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Google Developer Groups]
-
-Open Source Developer
-  ],
-  right-content: [
-    Sept 2025 – present
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Designed a real-time #strong[React] + #strong[ Chrome Manifest V3] extension interface enabling natural language web automation],[Integrated #strong[FastAPI] and #strong[WebSocket] communication to display live agent reasoning, task progress, and DOM action traces],[Enchanced UI interaction reliability by #strong[30\%] through integrating DOM text parsing with #strong[Tesseract OCR] for element identification across diverse webpage layouts],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[McMaster Solar Car Project]
-
-Full Stack Developer
-  ],
-  right-content: [
-    Sept 2025 – present
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Designed and deployed #strong[LGTM] stack \(Loki, Grafana, Tempo, Mimir\) to monitor operations and track #strong[OpenTelemetry] metrics and logs through profiled #strong[Docker] containers  and integrated with #strong[GitHub Actions CI\/CD]],[Implemented robust error handling via #strong[FastAPI] and #strong[Jinja2], improving platform reliability],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[McMaster Exoskeleton]
-
-Software Developer
-  ],
-  right-content: [
-    Sept 2025 – present
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Developed and integrated an #strong[LSTM]-based gait prediction algorithm with #strong[PyTorch], achieving #strong[85\% accuracy] \(±5°\) in estimating joint angles from IMU sensor data],[Optimized model generalization through diverse training data, allowing adaptation to varied gait patterns, including stair climbing and walking at multiple speeds and stride lengths],)
-  ],
-)
-
-
-
-== Projects
-
-
-#two-col-entry(
-  left-content: [
-    #strong[NewKnew] 
-  ],
-  right-content: [
-    Sept 2025
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Developed GPT-4-powered news platform, delivering concise insights on trending tech articles],[Implemented #strong[Express\/Node.js] backend with a #strong[PostgreSQL] database, optimizing query performance and clustering articles via #strong[k-means], displayed through a responsive #strong[Next.js] frontend for personalized feeds and live topic updates],[Automated data pipeline in #strong[Python] to scrape and preprocess #strong[500+] articles, reducing manual curation time by #strong[90\%]],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Restaurant Location Optimization] 
-  ],
-  right-content: [
-    Nov 2024
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Designed a profit-maximization model with #strong[NumPy] using a non-linear cost function and implemented a gradient descent algorithm to converge on optimal restaurant coordinates],[Addressed model limitations by integrating non-Euclidean geometric constraints, increasing accuracy by #strong[70\%]],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Wilberforce Pendulum Simulation] 
-  ],
-  right-content: [
-    Feb 2025
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Built a computational physics simulation solving nonlinear differential equations to model pendulum motion],[Designed data visualization pipeline with #strong[Matplotlib], producing clear insights on oscillatory and rotational dynamics],)
-  ],
-)
-
-
-
-== Skills
-
-
-#one-col-entry(
-  content: [#strong[Languages:] Python, TypeScript, JavaScript, Java, HTML\/CSS, SQL]
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [#strong[Technologies\/Frameworks:] Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes]
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [#strong[Libraries:] FastAPI, scikit-learn, Matplotlib, NumPy, Pandas]
-)
-
-
