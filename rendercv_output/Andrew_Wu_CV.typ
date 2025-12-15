@@ -6,7 +6,6 @@
 #let locale-catalog-last-updated-date-style = ""
 #let locale-catalog-language = "en"
 #let design-page-size = "us-letter"
-#let design-section-titles-font-size = 1.2em
 #let design-colors-text = rgb(0, 0, 0)
 #let design-colors-section-titles = rgb(0, 0, 0)
 #let design-colors-last-updated-date-and-page-numbering = rgb(128, 128, 128)
@@ -17,7 +16,7 @@
 #let design-section-titles-bold = true
 #let design-section-titles-line-thickness = 0.5pt
 #let design-section-titles-font-size = 1.2em
-#let design-section-titles-type = "with-parial-line"
+#let design-section-titles-type = "with-partial-line"
 #let design-section-titles-vertical-space-above = 0.4cm
 #let design-section-titles-vertical-space-below = 0.4cm
 #let design-section-titles-small-caps = false
@@ -32,6 +31,7 @@
 #let design-header-name-font-family = "XCharter"
 #let design-header-name-font-size = 25pt
 #let design-header-name-bold = false
+#let design-header-small-caps-for-name = false
 #let design-header-connections-font-family = "XCharter"
 #let design-header-vertical-space-between-name-and-connections = 0.7cm
 #let design-header-vertical-space-between-connections-and-first-section = 0.7cm
@@ -41,6 +41,7 @@
 #let design-header-alignment = center
 #let design-highlights-summary-left-margin = 0cm
 #let design-highlights-bullet = "•"
+#let design-highlights-nested-bullet = "-"
 #let design-highlights-top-margin = 0.25cm
 #let design-highlights-left-margin = 0cm
 #let design-highlights-vertical-space-between-highlights = 0.2cm
@@ -125,13 +126,22 @@
   )
 }
 #show list: set list(
-  marker: design-highlights-bullet,
-  spacing: 0pt,
+  marker: design-highlights-nested-bullet,
+  spacing: design-highlights-vertical-space-between-highlights,
   indent: 0pt,
   body-indent: design-highlights-horizontal-space-between-bullet-and-highlights,
 )
 
 // Entry utilities:
+#let bullet-entry(..content) = {
+  list(
+    ..content,
+    marker: design-highlights-bullet,
+    spacing: 0pt,
+    indent: 0pt,
+    body-indent: design-highlights-horizontal-space-between-bullet-and-highlights,
+  )
+}
 #let three-col(
   left-column-width: 1fr,
   middle-column-width: 1fr,
@@ -192,7 +202,11 @@
     size: design-header-name-font-size,
     fill: design-colors-name,
   )
-  #it.body
+  #if design-header-small-caps-for-name [
+    #smallcaps(it.body)
+  ] else [
+    #it.body
+  ]
   // Vertical space after the name
   #v(design-header-vertical-space-between-name-and-connections)
 ]
@@ -243,7 +257,7 @@
         #box(
           [
             #section-title
-            #if design-section-titles-type == "with-parial-line" [
+            #if design-section-titles-type == "with-partial-line" [
               #box(width: 1fr, height: design-section-titles-line-thickness, fill: design-colors-section-titles)
             ] else if design-section-titles-type == "with-full-line" [
 
@@ -454,8 +468,8 @@
   [#box(original-link("mailto:andrewwuca@gmail.com")[#fa-icon("envelope", size: 0.9em) #h(0.05cm)andrewwuca\@gmail.com])],
   [#box(original-link("tel:+1-647-451-7652")[#fa-icon("phone", size: 0.9em) #h(0.05cm)\(647\) 451-7652])],
   [#box(original-link("https://www.andrewwu.ca/")[#fa-icon("link", size: 0.9em) #h(0.05cm)www.andrewwu.ca])],
-  [#box(original-link("https://github.com/andrewwu13")[#fa-icon("github", size: 0.9em) #h(0.05cm)andrewwu13])],
-  [#box(original-link("https://linkedin.com/in/andrew-wu13")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)andrew-wu13])],
+  [#box(original-link("https://github.com/andrewwu13")[#fa-icon("github", size: 0.9em) #h(0.05cm)github.com\/andrewwu13])],
+  [#box(original-link("https://linkedin.com/in/andrew-wu13")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)linkedin.com\/in\/andrew-wu13])],
 )
 #connections(connections-list)
 
@@ -495,9 +509,7 @@
 
 #two-col-entry(
   left-content: [
-    #strong[McMaster Artificial Intelligence Society]
-
-Software Developer
+    #strong[McMaster Artificial Intelligence Society] | #emph[Software Developer]
   ],
   right-content: [
     Oct 2025 – present
@@ -512,9 +524,7 @@ Software Developer
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Google Developer Groups]
-
-Open Source Developer
+    #strong[Google Developer Groups] | #emph[Open Source Developer]
   ],
   right-content: [
     Sept 2025 – present
@@ -529,9 +539,7 @@ Open Source Developer
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[McMaster Solar Car Project]
-
-Full Stack Developer
+    #strong[McMaster Solar Car Project] | #emph[Full Stack Developer]
   ],
   right-content: [
     Sept 2025 – present
@@ -546,9 +554,7 @@ Full Stack Developer
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[McMaster Exoskeleton]
-
-Software Developer
+    #strong[McMaster Exoskeleton] | #emph[Software Developer]
   ],
   right-content: [
     Sept 2025 – present
@@ -556,7 +562,7 @@ Software Developer
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Developed and integrated an #strong[LSTM]-based gait prediction algorithm with #strong[PyTorch], achieving #strong[85\% accuracy] \(±5°\) in estimating joint angles from IMU sensor data],[Optimized model generalization through diverse training data, allowing adaptation to varied gait patterns, including stair climbing and walking at multiple speeds and stride lengths],)
+    #v(design-highlights-top-margin);#highlights([Developed and integrated an #strong[LSTM]-based gait prediction algorithm with #strong[PyTorch], achieving #strong[85\% accuracy] \(±5°\) in estimating joint angles from IMU sensor data],[Optimized model generalization through diverse training data, allowing adaptation to varied gait patterns.],)
   ],
 )
 
@@ -619,11 +625,11 @@ Software Developer
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Technologies\/Frameworks:] Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes]
+  content: [#strong[Technologies\/Frameworks:] Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes, Agile Development, Visual Studio, VMware, Selenium]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Libraries:] FastAPI, scikit-learn, Matplotlib, NumPy, Pandas]
+  content: [#strong[Libraries:] FastAPI, Pydantic, scikit-learn, Matplotlib, NumPy, Pandas]
 )
 
 

@@ -21,6 +21,7 @@ cv:
         summary:
         highlights:
     experience:
+    # lets rewword all these experiences to highlight more data science
       - company: McMaster Artificial Intelligence Society
         position: Software Developer 
         date:
@@ -29,7 +30,7 @@ cv:
         location: McMaster University
         summary:
         highlights:
-           - Developed a **Next.js** + **FastAPI** web application that performs real-time deepfake detection from user uploads
+           - Built a weighted hybrid **FFT–ViT–CNN** deepfake detection model, integrated into a **Next.js** + **FastAPI** web application, achieving **85% test accuracy**
            - Integrated async model serving, batch processing, and GPU-accelerated inference to optimize latency and throughput
            - Deployed ML inference pipeline with **Docker** and **Kubernetes**, leveraging **NGNIX load balancing** and **Redis caching** on cloud infrastructure
       - company: Google Developer Groups
@@ -40,19 +41,9 @@ cv:
         location: McMaster University
         summary:
         highlights:
-           - Designed a real-time **React** + ** Chrome Manifest V3** extension interface enabling natural language web automation
-           - Integrated **FastAPI** and **WebSocket** communication to display live agent reasoning, task progress, and DOM action traces
-           - Enchanced UI interaction reliability by **30%** through integrating DOM text parsing with **Tesseract OCR** for element identification across diverse webpage layouts
-      - company: McMaster Solar Car Project
-        position: Full Stack Developer
-        date:
-        start_date: 2025-09
-        end_date: present
-        location: McMaster University
-        summary:
-        highlights:
-           - Designed and deployed **LGTM** stack (Loki, Grafana, Tempo, Mimir) to monitor operations and track **OpenTelemetry** metrics and logs through profiled **Docker** containers  and integrated with **GitHub Actions CI/CD**
-           - Implemented robust error handling via **FastAPI** and **Jinja2**, improving platform reliability
+           - Designed an AI-powered browser automation agent using **LangGraph** and **LLM-based reasoning** to orchestrate multi-step reasoning and tool use for dynamic webpage interaction
+           - Integrated **Playwright** to execute DOM actions into DOM-state embedding pipeline, increasing UI-interaction reliability by **30%** across non-responsive webpages and SPA's
+           - Developed real-time reasoning logging with **FastAPI** and **WebSockets** for debugging and interpretability of agent actions
       - company: McMaster Exoskeleton
         position: Software Developer
         date:
@@ -63,6 +54,16 @@ cv:
         highlights:
           - Developed and integrated an **LSTM**-based gait prediction algorithm with **PyTorch**, achieving **85% accuracy** (±5°) in estimating joint angles from IMU sensor data
           - Optimized model generalization through diverse training data, allowing adaptation to varied gait patterns.
+      - company: McMaster Solar Car Project
+        position: Full Stack Developer
+        date:
+        start_date: 2025-09
+        end_date: present
+        location: McMaster University
+        summary:
+        highlights:
+           - Designed and deployed **LGTM** stack (Loki, Grafana, Tempo, Mimir) to monitor operations and track **OpenTelemetry** metrics and logs through profiled **Docker** containers and integrated with **GitHub Actions CI/CD**
+           - Implemented robust error handling via **FastAPI** and **Jinja2**, improving platform reliability
     projects:
       - name: NewKnew
         date: 2025-09
@@ -93,14 +94,15 @@ cv:
         highlights:
           - Built a computational physics simulation solving nonlinear differential equations to model pendulum motion
           - Designed data visualization pipeline with **Matplotlib**, producing clear insights on oscillatory and rotational dynamics
+    # update skills for data science, one for full stack
     skills:
       - label: Languages
-        details: Python, TypeScript, JavaScript, Java, HTML/CSS, SQL
+        details: Python, SQL, Java, JavaScript, TypeScript, HTML/CSS
       - label: Technologies/Frameworks
-        details: Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes, Agile Development, Visual Studio, VMware, Selenium
+        details: PyTorch, HuggingFace, LangGraph, PostgreSQL, MySQL, Redis, Docker, Kubernetes, NGNIX, Grafana, Prometheus, WebSockets, Git, Agile Development
       - label: Libraries
-        details: FastAPI, Pydantic, scikit-learn, Matplotlib, NumPy, Pandas
-
+        details: OpenCV, TeseractOCR, FastAPI, Pydantic, scikit-learn, Matplotlib, NumPy, Pandas
+        
 design:
   theme: engineeringresumes
   page:
@@ -140,7 +142,7 @@ design:
     use_icons_for_connections: true
     alignment: center
   section_titles:
-    type: with-parial-line
+    type: with-partial-line
     font_family: XCharter
     font_size: 1.2em
     bold: true
@@ -159,7 +161,7 @@ design:
     show_time_spans_in: []
   highlights:
     bullet: •
-    top_margin: 0.25cm
+    top_margin: 0.3cm
     left_margin: 0cm
     vertical_space_between_highlights: 0.2cm
     horizontal_space_between_bullet_and_highlight: 0.3em
@@ -188,9 +190,7 @@ design:
       date_and_location_column_template: DATE 
     experience_entry:
     # add location
-      main_column_first_row_template: |- 
-        **COMPANY**
-        POSITION
+      main_column_first_row_template: '**COMPANY** | *POSITION*'
       main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS

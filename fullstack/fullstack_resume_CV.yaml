@@ -21,6 +21,7 @@ cv:
         summary:
         highlights:
     experience:
+    # lets rewword all these experiences to highlight more data science
       - company: McMaster Artificial Intelligence Society
         position: Software Developer 
         date:
@@ -93,6 +94,7 @@ cv:
         highlights:
           - Built a computational physics simulation solving nonlinear differential equations to model pendulum motion
           - Designed data visualization pipeline with **Matplotlib**, producing clear insights on oscillatory and rotational dynamics
+    # update skills for data science, one for full stack
     skills:
       - label: Languages
         details: Python, TypeScript, JavaScript, Java, HTML/CSS, SQL
@@ -140,7 +142,7 @@ design:
     use_icons_for_connections: true
     alignment: center
   section_titles:
-    type: with-parial-line
+    type: with-partial-line
     font_family: XCharter
     font_size: 1.2em
     bold: true
@@ -188,9 +190,7 @@ design:
       date_and_location_column_template: DATE 
     experience_entry:
     # add location
-      main_column_first_row_template: |- 
-        **COMPANY**
-        POSITION
+      main_column_first_row_template: '**COMPANY** | *POSITION*'
       main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS

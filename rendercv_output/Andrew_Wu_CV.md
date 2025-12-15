@@ -44,7 +44,7 @@
 - Sept 2025 – present
 - McMaster University
 - Developed and integrated an **LSTM**-based gait prediction algorithm with **PyTorch**, achieving **85% accuracy** (±5°) in estimating joint angles from IMU sensor data
-- Optimized model generalization through diverse training data, allowing adaptation to varied gait patterns, including stair climbing and walking at multiple speeds and stride lengths
+- Optimized model generalization through diverse training data, allowing adaptation to varied gait patterns.
 
 # Projects
 
@@ -70,5 +70,5 @@
 # Skills
 
 - Languages: Python, TypeScript, JavaScript, Java, HTML/CSS, SQL
-- Technologies/Frameworks: Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes,
-- Libraries: FastAPI, scikit-learn, Matplotlib, NumPy, Pandas
+- Technologies/Frameworks: Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes, Agile Development, Visual Studio, VMware, Selenium
+- Libraries: FastAPI, Pydantic, scikit-learn, Matplotlib, NumPy, Pandas
