@@ -20,6 +20,7 @@ cv:
         location: Hamilton, Ontario
         summary:
         highlights:
+        - 4.0 GPA
     experience:
       - company: McMaster Artificial Intelligence Society
         position: Software Developer 
@@ -100,7 +101,6 @@ cv:
         details: Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes, Agile Development, Visual Studio, VMware, Selenium
       - label: Libraries
         details: FastAPI, Pydantic, scikit-learn, Matplotlib, NumPy, Pandas
-
 design:
   theme: engineeringresumes
   page:
@@ -140,7 +140,7 @@ design:
     use_icons_for_connections: true
     alignment: center
   section_titles:
-    type: with-parial-line
+    type: with-full-line
     font_family: XCharter
     font_size: 1.2em
     bold: true
@@ -159,7 +159,7 @@ design:
     show_time_spans_in: []
   highlights:
     bullet: •
-    top_margin: 0.25cm
+    top_margin: 0.3cm
     left_margin: 0cm
     vertical_space_between_highlights: 0.2cm
     horizontal_space_between_bullet_and_highlight: 0.3em
@@ -188,9 +188,7 @@ design:
       date_and_location_column_template: DATE 
     experience_entry:
     # add location
-      main_column_first_row_template: |- 
-        **COMPANY**
-        POSITION
+      main_column_first_row_template: '**COMPANY** | *POSITION*'
       main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS

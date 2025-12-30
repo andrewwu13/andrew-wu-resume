@@ -20,6 +20,7 @@ cv:
         location: Hamilton, Ontario
         summary:
         highlights:
+        - 4.0 GPA
     experience:
     # lets rewword all these experiences to highlight more data science
       - company: McMaster Artificial Intelligence Society
@@ -104,7 +105,7 @@ cv:
         details: OpenCV, TeseractOCR, FastAPI, Pydantic, scikit-learn, Matplotlib, NumPy, Pandas
         
 design:
-  theme: engineeringresumes
+  theme: engineeringclassic
   page:
     size: us-letter
     top_margin: 1.5cm

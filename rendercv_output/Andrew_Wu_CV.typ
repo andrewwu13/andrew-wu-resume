@@ -42,7 +42,7 @@
 #let design-highlights-summary-left-margin = 0cm
 #let design-highlights-bullet = "•"
 #let design-highlights-nested-bullet = "-"
-#let design-highlights-top-margin = 0.25cm
+#let design-highlights-top-margin = 0.3cm
 #let design-highlights-left-margin = 0cm
 #let design-highlights-vertical-space-between-highlights = 0.2cm
 #let design-highlights-horizontal-space-between-bullet-and-highlights = 0.3em
@@ -468,8 +468,8 @@
   [#box(original-link("mailto:andrewwuca@gmail.com")[#fa-icon("envelope", size: 0.9em) #h(0.05cm)andrewwuca\@gmail.com])],
   [#box(original-link("tel:+1-647-451-7652")[#fa-icon("phone", size: 0.9em) #h(0.05cm)\(647\) 451-7652])],
   [#box(original-link("https://www.andrewwu.ca/")[#fa-icon("link", size: 0.9em) #h(0.05cm)www.andrewwu.ca])],
-  [#box(original-link("https://github.com/andrewwu13")[#fa-icon("github", size: 0.9em) #h(0.05cm)github.com\/andrewwu13])],
-  [#box(original-link("https://linkedin.com/in/andrew-wu13")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)linkedin.com\/in\/andrew-wu13])],
+  [#box(original-link("https://github.com/andrewwu13")[#fa-icon("github", size: 0.9em) #h(0.05cm)andrewwu13])],
+  [#box(original-link("https://linkedin.com/in/andrew-wu13")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)andrew-wu13])],
 )
 #connections(connections-list)
 
@@ -494,7 +494,7 @@
 #block(
   [
     #set par(spacing: 0pt)
-    
+    #v(design-highlights-top-margin);#highlights([4.0 GPA],)
   ],
   inset: (
     left: design-entries-left-and-right-margin,
@@ -517,7 +517,7 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Developed a #strong[Next.js] + #strong[FastAPI] web application that performs real-time deepfake detection from user uploads],[Integrated async model serving, batch processing, and GPU-accelerated inference to optimize latency and throughput],[Deployed ML inference pipeline with #strong[Docker] and #strong[Kubernetes], leveraging #strong[NGNIX load balancing] and #strong[Redis caching] on cloud infrastructure],)
+    #v(design-highlights-top-margin);#highlights([Built a weighted hybrid #strong[FFT–ViT–CNN] deepfake detection model, integrated into a #strong[Next.js] + #strong[FastAPI] web application, achieving #strong[85\% test accuracy]],[Integrated async model serving, batch processing, and GPU-accelerated inference to optimize latency and throughput],[Deployed ML inference pipeline with #strong[Docker] and #strong[Kubernetes], leveraging #strong[NGNIX load balancing] and #strong[Redis caching] on cloud infrastructure],)
   ],
 )
 
@@ -532,22 +532,7 @@
 )
 #one-col-entry(
   content: [
-    #v(design-highlights-top-margin);#highlights([Designed a real-time #strong[React] + #strong[ Chrome Manifest V3] extension interface enabling natural language web automation],[Integrated #strong[FastAPI] and #strong[WebSocket] communication to display live agent reasoning, task progress, and DOM action traces],[Enchanced UI interaction reliability by #strong[30\%] through integrating DOM text parsing with #strong[Tesseract OCR] for element identification across diverse webpage layouts],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[McMaster Solar Car Project] | #emph[Full Stack Developer]
-  ],
-  right-content: [
-    Sept 2025 – present
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Designed and deployed #strong[LGTM] stack \(Loki, Grafana, Tempo, Mimir\) to monitor operations and track #strong[OpenTelemetry] metrics and logs through profiled #strong[Docker] containers  and integrated with #strong[GitHub Actions CI\/CD]],[Implemented robust error handling via #strong[FastAPI] and #strong[Jinja2], improving platform reliability],)
+    #v(design-highlights-top-margin);#highlights([Designed an AI-powered browser automation agent using #strong[LangGraph] and #strong[LLM-based reasoning] to orchestrate multi-step reasoning and tool use for dynamic webpage interaction],[Integrated #strong[Playwright] to execute DOM actions into DOM-state embedding pipeline, increasing UI-interaction reliability by #strong[30\%] across non-responsive webpages and SPA's],[Developed real-time reasoning logging with #strong[FastAPI] and #strong[WebSockets] for debugging and interpretability of agent actions],)
   ],
 )
 
@@ -563,6 +548,21 @@
 #one-col-entry(
   content: [
     #v(design-highlights-top-margin);#highlights([Developed and integrated an #strong[LSTM]-based gait prediction algorithm with #strong[PyTorch], achieving #strong[85\% accuracy] \(±5°\) in estimating joint angles from IMU sensor data],[Optimized model generalization through diverse training data, allowing adaptation to varied gait patterns.],)
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+#two-col-entry(
+  left-content: [
+    #strong[McMaster Solar Car Project] | #emph[Full Stack Developer]
+  ],
+  right-content: [
+    Sept 2025 – present
+  ],
+)
+#one-col-entry(
+  content: [
+    #v(design-highlights-top-margin);#highlights([Designed and deployed #strong[LGTM] stack \(Loki, Grafana, Tempo, Mimir\) to monitor operations and track #strong[OpenTelemetry] metrics and logs through profiled #strong[Docker] containers and integrated with #strong[GitHub Actions CI\/CD]],[Implemented robust error handling via #strong[FastAPI] and #strong[Jinja2], improving platform reliability],)
   ],
 )
 
@@ -621,15 +621,15 @@
 
 
 #one-col-entry(
-  content: [#strong[Languages:] Python, TypeScript, JavaScript, Java, HTML\/CSS, SQL]
+  content: [#strong[Languages:] Python, SQL, Java, JavaScript, TypeScript, HTML\/CSS]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Technologies\/Frameworks:] Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes, Agile Development, Visual Studio, VMware, Selenium]
+  content: [#strong[Technologies\/Frameworks:] PyTorch, HuggingFace, LangGraph, PostgreSQL, MySQL, Redis, Docker, Kubernetes, NGNIX, Grafana, Prometheus, WebSockets, Git, Agile Development]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Libraries:] FastAPI, Pydantic, scikit-learn, Matplotlib, NumPy, Pandas]
+  content: [#strong[Libraries:] OpenCV, TeseractOCR, FastAPI, Pydantic, scikit-learn, Matplotlib, NumPy, Pandas]
 )
 
 

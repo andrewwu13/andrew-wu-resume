@@ -13,6 +13,7 @@
 
 - May 2029
 - Hamilton, Ontario
+- 4.0 GPA
 
 # Experience
 
@@ -20,7 +21,7 @@
 
 - Oct 2025 – present
 - McMaster University
-- Developed a **Next.js** + **FastAPI** web application that performs real-time deepfake detection from user uploads
+- Built a weighted hybrid **FFT–ViT–CNN** deepfake detection model, integrated into a **Next.js** + **FastAPI** web application, achieving **85% test accuracy**
 - Integrated async model serving, batch processing, and GPU-accelerated inference to optimize latency and throughput
 - Deployed ML inference pipeline with **Docker** and **Kubernetes**, leveraging **NGNIX load balancing** and **Redis caching** on cloud infrastructure
 
@@ -28,16 +29,9 @@
 
 - Sept 2025 – present
 - McMaster University
-- Designed a real-time **React** + ** Chrome Manifest V3** extension interface enabling natural language web automation
-- Integrated **FastAPI** and **WebSocket** communication to display live agent reasoning, task progress, and DOM action traces
-- Enchanced UI interaction reliability by **30%** through integrating DOM text parsing with **Tesseract OCR** for element identification across diverse webpage layouts
-
-## McMaster Solar Car Project, Full Stack Developer
-
-- Sept 2025 – present
-- McMaster University
-- Designed and deployed **LGTM** stack (Loki, Grafana, Tempo, Mimir) to monitor operations and track **OpenTelemetry** metrics and logs through profiled **Docker** containers  and integrated with **GitHub Actions CI/CD**
-- Implemented robust error handling via **FastAPI** and **Jinja2**, improving platform reliability
+- Designed an AI-powered browser automation agent using **LangGraph** and **LLM-based reasoning** to orchestrate multi-step reasoning and tool use for dynamic webpage interaction
+- Integrated **Playwright** to execute DOM actions into DOM-state embedding pipeline, increasing UI-interaction reliability by **30%** across non-responsive webpages and SPA's
+- Developed real-time reasoning logging with **FastAPI** and **WebSockets** for debugging and interpretability of agent actions
 
 ## McMaster Exoskeleton, Software Developer
 
@@ -45,6 +39,13 @@
 - McMaster University
 - Developed and integrated an **LSTM**-based gait prediction algorithm with **PyTorch**, achieving **85% accuracy** (±5°) in estimating joint angles from IMU sensor data
 - Optimized model generalization through diverse training data, allowing adaptation to varied gait patterns.
+
+## McMaster Solar Car Project, Full Stack Developer
+
+- Sept 2025 – present
+- McMaster University
+- Designed and deployed **LGTM** stack (Loki, Grafana, Tempo, Mimir) to monitor operations and track **OpenTelemetry** metrics and logs through profiled **Docker** containers and integrated with **GitHub Actions CI/CD**
+- Implemented robust error handling via **FastAPI** and **Jinja2**, improving platform reliability
 
 # Projects
 
@@ -69,6 +70,6 @@
 
 # Skills
 
-- Languages: Python, TypeScript, JavaScript, Java, HTML/CSS, SQL
-- Technologies/Frameworks: Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes, Agile Development, Visual Studio, VMware, Selenium
-- Libraries: FastAPI, Pydantic, scikit-learn, Matplotlib, NumPy, Pandas
+- Languages: Python, SQL, Java, JavaScript, TypeScript, HTML/CSS
+- Technologies/Frameworks: PyTorch, HuggingFace, LangGraph, PostgreSQL, MySQL, Redis, Docker, Kubernetes, NGNIX, Grafana, Prometheus, WebSockets, Git, Agile Development
+- Libraries: OpenCV, TeseractOCR, FastAPI, Pydantic, scikit-learn, Matplotlib, NumPy, Pandas

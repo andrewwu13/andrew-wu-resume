@@ -20,8 +20,8 @@ cv:
         location: Hamilton, Ontario
         summary:
         highlights:
+        - 4.0 GPA
     experience:
-    # lets rewword all these experiences to highlight more data science
       - company: McMaster Artificial Intelligence Society
         position: Software Developer 
         date:
@@ -94,7 +94,6 @@ cv:
         highlights:
           - Built a computational physics simulation solving nonlinear differential equations to model pendulum motion
           - Designed data visualization pipeline with **Matplotlib**, producing clear insights on oscillatory and rotational dynamics
-    # update skills for data science, one for full stack
     skills:
       - label: Languages
         details: Python, TypeScript, JavaScript, Java, HTML/CSS, SQL
@@ -102,9 +101,8 @@ cv:
         details: Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes, Agile Development, Visual Studio, VMware, Selenium
       - label: Libraries
         details: FastAPI, Pydantic, scikit-learn, Matplotlib, NumPy, Pandas
-
 design:
-  theme: engineeringresumes
+  theme: engineeringclassic
   page:
     size: us-letter
     top_margin: 1.5cm
@@ -161,7 +159,7 @@ design:
     show_time_spans_in: []
   highlights:
     bullet: •
-    top_margin: 0.25cm
+    top_margin: 0.3cm
     left_margin: 0cm
     vertical_space_between_highlights: 0.2cm
     horizontal_space_between_bullet_and_highlight: 0.3em
