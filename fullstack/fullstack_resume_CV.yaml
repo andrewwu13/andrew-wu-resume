@@ -96,9 +96,9 @@ cv:
           - Designed data visualization pipeline with **Matplotlib**, producing clear insights on oscillatory and rotational dynamics
     skills:
       - label: Languages
-        details: Python, TypeScript, JavaScript, Java, HTML/CSS, SQL
+        details: Python, TypeScript, JavaScript, Java, HTML/CSS, SQL, C, C++
       - label: Technologies/Frameworks
-        details: Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes, Agile Development, Visual Studio, VMware, Selenium
+        details: Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes, Agile Development, Linux, Networking, GCP, Azure
       - label: Libraries
         details: FastAPI, Pydantic, scikit-learn, Matplotlib, NumPy, Pandas
 design:
