@@ -1,9 +1,5 @@
 # alan's resumes
-rendercv_output/Alan_Yuechen_Zhao_CV_1.png
-rendercv_output/Alan_Yuechen_Zhao_CV_2.png
-rendercv_output/Alan_Yuechen_Zhao_CV.html
-rendercv_output/Alan_Yuechen_Zhao_CV.md
-rendercv_output/Alan_Yuechen_Zhao_CV.pdf
-rendercv_output/Alan_Yuechen_Zhao_CV.typ
-AlanZhou_CV.yaml
+# RenderCV generated outputs
+rendercv_output/
 rendercv_output/**
+AlanZhou_CV.yaml
