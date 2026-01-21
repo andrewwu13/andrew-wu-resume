@@ -31,7 +31,7 @@ cv:
         summary:
         highlights:
            - Developed a **Next.js** + **FastAPI** web application that performs real-time deepfake detection from user uploads
-           - Productionized the ML inference pipeline using **Docker**, **Kubernetes**, **NGNIX**, and **Redis**, supporting low-laatency, scalable inference
+           - Deployed the ML inference pipeline using **Docker**, **Kubernetes**, **NGNIX**, and **Redis**, supporting low-laatency, scalable inference
       - company: Google Developer Groups
         position: Open Source Developer
         date:
@@ -50,7 +50,7 @@ cv:
         location: McMaster University
         summary:
         highlights:
-           - Deployed an **LGTM observability stack** (Loki, Grafana, Tempo, Mimir) with **OpenTelemetry** and **GitHub Actions CI/CD** to monitor production services
+           - Deployed an **LGTM observability stack** (Loki, Grafana, Tempo, Mimir) with **OpenTelemetry** and **GitHub Actions CI/CD** to monitor team-operated web services
            - Implemented robust error handling via **FastAPI** and **Jinja2**, improving platform reliability
       - company: McMaster Exoskeleton
         position: Software Developer

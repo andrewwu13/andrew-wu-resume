@@ -32,7 +32,7 @@ cv:
         summary:
         highlights:
            - Built a weighted hybrid **FFT–ViT–CNN** deepfake detection model, integrated into a **Next.js** + **FastAPI** web application, achieving **85% test accuracy**
-           - Productionized the ML inference pipeline with **GPU acceleration**, **Docker**, **Kubernetes**, and **Redis**, enabling low-laatency, scalable deployment
+           - Deployed the ML inference pipeline with **GPU acceleration**, **Docker**, **Kubernetes**, and **Redis**, enabling low-laatency, scalable deployment
       - company: Google Developer Groups
         position: Open Source Developer
         date:
@@ -61,7 +61,7 @@ cv:
         location: McMaster University
         summary:
         highlights:
-           - Deployed a **LGTM observability stack** (Loki, Grafana, Tempo, Mimir) with **OpenTelemetry** and **GitHub Actions CI/CD** to monitor production services
+           - Deployed a **LGTM observability stack** (Loki, Grafana, Tempo, Mimir) with **OpenTelemetry** and **GitHub Actions CI/CD** to monitor team-operated web services
     projects:
       - name: GenUI
         date: 2026-01
