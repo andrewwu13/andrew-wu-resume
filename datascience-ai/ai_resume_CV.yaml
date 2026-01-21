@@ -32,8 +32,7 @@ cv:
         summary:
         highlights:
            - Built a weighted hybrid **FFT–ViT–CNN** deepfake detection model, integrated into a **Next.js** + **FastAPI** web application, achieving **85% test accuracy**
-           - Integrated async model serving, batch processing, and GPU-accelerated inference to optimize latency and throughput
-           - Deployed ML inference pipeline with **Docker** and **Kubernetes**, leveraging **NGNIX load balancing** and **Redis caching** on cloud infrastructure
+           - Productionized the ML inference pipeline with **GPU acceleration**, **Docker**, **Kubernetes**, and **Redis**, enabling low-laatency, scalable deployment
       - company: Google Developer Groups
         position: Open Source Developer
         date:
@@ -42,9 +41,8 @@ cv:
         location: McMaster University
         summary:
         highlights:
-           - Designed an AI-powered browser automation agent using **LangGraph** and **LLM-based reasoning** to orchestrate multi-step reasoning and tool use for dynamic webpage interaction
-           - Integrated **Playwright** to execute DOM actions into DOM-state embedding pipeline, increasing UI-interaction reliability by **30%** across non-responsive webpages and SPA's
-           - Developed real-time reasoning logging with **FastAPI** and **WebSockets** for debugging and interpretability of agent actions
+           - Designed an LLM-powered browser automation agent using **LangGraph** to orchestrate multi-step reasoning and tool use for dynamic webpage interaction
+           - Improved agent robustness by 30% using Playwright-based DOM execution and FastAPI/WebSocket reasoning logs for observability
       - company: McMaster Exoskeleton
         position: Software Developer
         date:
@@ -53,7 +51,7 @@ cv:
         location: McMaster University
         summary:
         highlights:
-          - Developed and integrated an **LSTM**-based gait prediction algorithm with **PyTorch**, achieving **85% accuracy** (±5°) in estimating joint angles from IMU sensor data
+          - Developed a **TCN**-based time-series model with **PyTorch** for gait prediction, achieving **85% accuracy** (±5°) in estimating joint angles from IMU sensor data
           - Optimized model generalization through diverse training data, allowing adaptation to varied gait patterns.
       - company: McMaster Solar Car Project
         position: Full Stack Developer
@@ -63,10 +61,29 @@ cv:
         location: McMaster University
         summary:
         highlights:
-           - Designed and deployed **LGTM** stack (Loki, Grafana, Tempo, Mimir) to monitor operations and track **OpenTelemetry** metrics and logs through profiled **Docker** containers and integrated with **GitHub Actions CI/CD**
-           - Implemented robust error handling via **FastAPI** and **Jinja2**, improving platform reliability
+           - Deployed a **LGTM observability stack** (Loki, Grafana, Tempo, Mimir) with **OpenTelemetry** and **GitHub Actions CI/CD** to monitor production services
     projects:
-      - name: NewKnew
+      - name: GenUI
+        date: 2026-01
+        start_date: 
+        end_date:
+        location: Self-Evolving AI Storefront
+        summary: 
+        highlights:
+          - Built a real-time, adaptive storefront that dynamically reconfigures UI layouts from live user behaviour, winning **Best Beginner Hacks** and **Backboard.io Runner Up** at UofTHacks 13
+          - Engineered a telemetry-driven decision pipeline using **FastAPI**, **Redis**, and **MongoDB** for sub-second UI adaptation
+          - Designed a **LangGraph-based multi-agent orchestration layer** to infer user intent and automate A/B experimentation
+      - name: Waypoint
+        date: 2026-01
+        start_date: 
+        end_date:
+        location: Search & Rescue Prediction System
+        summary: 
+        highlights:
+          - Built an interactive predictive visualization platform with **React** to empower data-driven SAR decision-making
+          - Deployed geospatial simulation pipelines modeling 1,000+ parallel autonomous agents, incorporating terrain features and ISRID-informed behavioral strategies
+          - Implemented **multi-tile local LRU caching**, mitigating external API rate limits and improving simulation throughput by 35% versus cold starts
+      - name: NewNews
         date: 2025-09
         start_date:
         end_date:
@@ -74,33 +91,14 @@ cv:
         summary: 
         stack: Next.js, React.js, Express.js, Node.js, PostgreSQL, Python
         highlights:
-          - Developed GPT-4-powered news platform, delivering concise insights on trending tech articles
-          - Implemented **Express/Node.js** backend with a **PostgreSQL** database, optimizing query performance and clustering articles via **k-means**, displayed through a responsive **Next.js** frontend for personalized feeds and live topic updates
-          - Automated data pipeline in **Python** to scrape and preprocess **500+** articles, reducing manual curation time by **90%**
-      - name: Restaurant Location Optimization
-        date: 2024-11
-        start_date: 
-        end_date:
-        location:
-        summary:
-        highlights:
-          - Designed a profit-maximization model with **NumPy** using a non-linear cost function and implemented a gradient descent algorithm to converge on optimal restaurant coordinates
-          - Addressed model limitations by integrating non-Euclidean geometric constraints, increasing accuracy by **70%** 
-      - name: Wilberforce Pendulum Simulation
-        date: 2025-02
-        start_date: 
-        end_date:
-        location:
-        summary:
-        highlights:
-          - Built a computational physics simulation solving nonlinear differential equations to model pendulum motion
-          - Designed data visualization pipeline with **Matplotlib**, producing clear insights on oscillatory and rotational dynamics
+          - Developed GPT-4-powered news platform, with **k-means** clustering for topic discovery, backed by an **Express/PostgreSQL** pipeline and **Next.js** frontend
+          - Automated **Python** data pipeline to scrape and preprocess **500+** articles, reducing manual curation time by **~90%**
     # update skills for data science, one for full stack
     skills:
       - label: Languages
         details: Python, SQL, Java, JavaScript, TypeScript, HTML/CSS
       - label: Technologies/Frameworks
-        details: PyTorch, HuggingFace, LangGraph, PostgreSQL, MySQL, Redis, Docker, Kubernetes, NGNIX, Grafana, Prometheus, WebSockets, Git, Agile Development
+        details: PyTorch, HuggingFace, LangGraph, PostgreSQL, MySQL, Redis, Docker, Kubernetes, NGINX, Grafana, Prometheus, WebSockets, Git, Agile Development
       - label: Libraries
         details: OpenCV, TeseractOCR, FastAPI, Pydantic, scikit-learn, Matplotlib, NumPy, Pandas
         

@@ -31,8 +31,7 @@ cv:
         summary:
         highlights:
            - Developed a **Next.js** + **FastAPI** web application that performs real-time deepfake detection from user uploads
-           - Integrated async model serving, batch processing, and GPU-accelerated inference to optimize latency and throughput
-           - Deployed ML inference pipeline with **Docker** and **Kubernetes**, leveraging **NGNIX load balancing** and **Redis caching** on cloud infrastructure
+           - Productionized the ML inference pipeline using **Docker**, **Kubernetes**, **NGNIX**, and **Redis**, supporting low-laatency, scalable inference
       - company: Google Developer Groups
         position: Open Source Developer
         date:
@@ -41,9 +40,8 @@ cv:
         location: McMaster University
         summary:
         highlights:
-           - Designed a real-time **React** + ** Chrome Manifest V3** extension interface enabling natural language web automation
-           - Integrated **FastAPI** and **WebSocket** communication to display live agent reasoning, task progress, and DOM action traces
-           - Enchanced UI interaction reliability by **30%** through integrating DOM text parsing with **Tesseract OCR** for element identification across diverse webpage layouts
+           - Built a real-time **React** + ** Chrome Manifest V3** extension interface enabling natural language web automation
+           - Implemented **FastAPI** + **WebSockets** and **OCR-assisted** DOM parsing, improving interaction reliability by **30%** and enabling live agent reasoning  
       - company: McMaster Solar Car Project
         position: Full Stack Developer
         date:
@@ -52,7 +50,7 @@ cv:
         location: McMaster University
         summary:
         highlights:
-           - Designed and deployed **LGTM** stack (Loki, Grafana, Tempo, Mimir) to monitor operations and track **OpenTelemetry** metrics and logs through profiled **Docker** containers  and integrated with **GitHub Actions CI/CD**
+           - Deployed an **LGTM observability stack** (Loki, Grafana, Tempo, Mimir) with **OpenTelemetry** and **GitHub Actions CI/CD** to monitor production services
            - Implemented robust error handling via **FastAPI** and **Jinja2**, improving platform reliability
       - company: McMaster Exoskeleton
         position: Software Developer
@@ -62,41 +60,42 @@ cv:
         location: McMaster University
         summary:
         highlights:
-          - Developed and integrated an **LSTM**-based gait prediction algorithm with **PyTorch**, achieving **85% accuracy** (±5°) in estimating joint angles from IMU sensor data
-          - Optimized model generalization through diverse training data, allowing adaptation to varied gait patterns.
+          - Developed and integrated an **TCN**-based gait prediction algorithm with **PyTorch**, achieving **85% accuracy** (±5°) in estimating joint angles from IMU sensor data
     projects:
-      - name: NewKnew
-        date: 2025-09
-        start_date:
+      - name: GenUI
+        date: 2026-01
+        start_date: 
         end_date:
-        location:
+        location: Self-Evolving AI Storefront
+        summary: 
+        highlights:
+          - Built a real-time, adaptive storefront that dynamically reconfigures UI layouts from live user behaviour, winning **Best Beginner Hacks** and **Backboard.io Runner Up** at UofTHacks 13
+          - Architected a low-latency, event-driven backend using **FastAPI**, **Server-Sent Events**, **Redis**, and **MongoDB** to ingest high-frequency telemetry and drive real-time UI decisions with sub-second end-to-end updates
+          - Designed a **LangGraph-based multi-agent orchestration layer** to infer user intent and automate A/B experimentation
+      - name: Waypoint
+        date: 2026-01
+        start_date: 
+        end_date:
+        location: Search & Rescue Prediction System
+        summary: 
+        highlights:
+          - Built an interactive predictive visualization platform with **React** to empower data-driven SAR decision-making
+          - Deployed **FastAPI-based** geospatial simulation pipelines modeling 1,000+ parallel autonomous agents, incorporating terrain features and ISRID-informed behavioral strategies
+          - Implemented **multi-tile local LRU caching**, mitigating external API rate limits and improving simulation throughput by 35% versus cold starts
+      - name: NewNews
+        date: 2025-09
+        start_date: 
+        end_date:
+        location: AI-powered News Summarizer
         summary: 
         stack: Next.js, React.js, Express.js, Node.js, PostgreSQL, Python
         highlights:
           - Developed GPT-4-powered news platform, delivering concise insights on trending tech articles
           - Implemented **Express/Node.js** backend with a **PostgreSQL** database, optimizing query performance and clustering articles via **k-means**, displayed through a responsive **Next.js** frontend for personalized feeds and live topic updates
           - Automated data pipeline in **Python** to scrape and preprocess **500+** articles, reducing manual curation time by **90%**
-      - name: Restaurant Location Optimization
-        date: 2024-11
-        start_date: 
-        end_date:
-        location:
-        summary:
-        highlights:
-          - Designed a profit-maximization model with **NumPy** using a non-linear cost function and implemented a gradient descent algorithm to converge on optimal restaurant coordinates
-          - Addressed model limitations by integrating non-Euclidean geometric constraints, increasing accuracy by **70%** 
-      - name: Wilberforce Pendulum Simulation
-        date: 2025-02
-        start_date: 
-        end_date:
-        location:
-        summary:
-        highlights:
-          - Built a computational physics simulation solving nonlinear differential equations to model pendulum motion
-          - Designed data visualization pipeline with **Matplotlib**, producing clear insights on oscillatory and rotational dynamics
     skills:
       - label: Languages
-        details: Python, TypeScript, JavaScript, Java, HTML/CSS, SQL, C, C++
+        details: Python, TypeScript, JavaScript, Java, HTML/CSS, SQL, C++, C, 
       - label: Technologies/Frameworks
         details: Next.js, React, Node.js, Express.js, PostgreSQL, MySQL, Git, Postman, Docker, Kubernetes, Agile Development, Linux, Networking, GCP, Azure
       - label: Libraries
@@ -181,7 +180,7 @@ design:
         *DATE*
     normal_entry:
     # figure out how to add a tech stack 
-      main_column_first_row_template: '**NAME** -- **LOCATION**'
+      main_column_first_row_template: '**NAME** -- *LOCATION*'
       main_column_second_row_template: |-
         SUMMARY
         HIGHLIGHTS
